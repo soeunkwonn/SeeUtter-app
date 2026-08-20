@@ -22,7 +22,6 @@ from workflow import (
 )
 
 
-st.set_page_config(page_title="SeeUtter · 자막 위치", page_icon="📍", layout="wide")
 init_session()
 artifact_dir = require_current_artifact()
 st.session_state.wizard_step = "position"

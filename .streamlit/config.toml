@@ -1,4 +1,0 @@
-# Hide the auto-generated multipage nav (English page names) from the sidebar.
-# Participants move only through the wizard's own Korean buttons.
-[client]
-showSidebarNavigation = false

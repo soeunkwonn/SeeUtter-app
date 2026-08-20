@@ -304,8 +304,8 @@ def clear_selection() -> None:
 def require_current_artifact() -> Path:
     artifact_dir = current_artifact()
     if artifact_dir is None:
-        st.warning("먼저 Library에서 영상을 선택해주세요.")
-        st.switch_page("app.py")
+        st.warning("먼저 영상을 선택해주세요.")
+        st.switch_page("home.py")
         st.stop()
     return artifact_dir
 

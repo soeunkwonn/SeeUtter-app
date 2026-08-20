@@ -26,7 +26,6 @@ from workflow import (
 )
 
 
-st.set_page_config(page_title="SeeUtter · 이름", page_icon="👤", layout="wide")
 init_session()
 artifact_dir = require_current_artifact()
 st.session_state.wizard_step = "names"
@@ -65,7 +64,7 @@ except (FileNotFoundError, ValueError) as exc:
 if not rows:
     st.warning("이름을 정할 사람을 찾지 못했어요.")
     if st.button("처음으로"):
-        st.switch_page("app.py")
+        st.switch_page("home.py")
     st.stop()
 
 speaker_ids = [str(row["speaker_id"]) for row in rows]
@@ -117,7 +116,7 @@ with st.form("speaker_names"):
         )
 
 if back:
-    st.switch_page("app.py")
+    st.switch_page("home.py")
 if next_step:
     save_speaker_map(artifact_dir, names)
     with st.spinner("이름을 적용하고 자막을 만들고 있어요..."):

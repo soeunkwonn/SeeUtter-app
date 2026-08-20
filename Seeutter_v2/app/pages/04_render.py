@@ -23,7 +23,6 @@ from workflow import (
 )
 
 
-st.set_page_config(page_title="SeeUtter · 완성 영상", page_icon="🎞️", layout="wide")
 init_session()
 artifact_dir = require_current_artifact()
 st.session_state.wizard_step = "render"
@@ -70,4 +69,4 @@ with back_col:
 with library_col:
     if st.button("처음으로", use_container_width=True):
         clear_selection()
-        st.switch_page("app.py")
+        st.switch_page("home.py")

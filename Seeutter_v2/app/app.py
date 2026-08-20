@@ -1,4 +1,3 @@
-
 from __future__ import annotations
 
 import sys
@@ -12,11 +11,8 @@ import streamlit as st
 
 from workflow import (
     clear_participant,
-    clear_selection,
     current_participant,
     init_session,
-    library_items,
-    select_library_item,
     set_participant,
 )
 
@@ -24,12 +20,12 @@ from workflow import (
 st.set_page_config(page_title="SeeUtter", page_icon="🎬", layout="wide")
 init_session()
 
-st.title("SeeUtter")
-
 # Participant gate: everyone opens the same URL, then identifies themselves.
-# The id keeps each person's speaker names / captions / renders isolated.
+# The number keeps each person's names / captions / renders isolated. Placed
+# before st.navigation so it blocks every page until a number is entered.
 participant = current_participant()
 if not participant:
+    st.title("SeeUtter")
     st.subheader("번호를 입력해 주세요")
     st.caption("받으신 번호를 입력해 주세요. (예: P07)")
     with st.form("participant_gate"):
@@ -48,36 +44,11 @@ with st.sidebar:
         clear_participant()
         st.rerun()
 
-st.caption("영상을 고르고, 화자명을 완성하세요.")
-
-items = library_items()
-if not items:
-    st.info("지금은 영상을 불러올 수 없어요. 연구자에게 알려 주세요.")
-    st.stop()
-
-labels = {
-    item["id"]: f"{item['title']}"
-    for item in items
-}
-current_id = st.session_state.get("library_artifact_id")
-ids = [item["id"] for item in items]
-initial_index = ids.index(current_id) if current_id in ids else 0
-selected_id = st.selectbox(
-    "영상을 골라 주세요",
-    ids,
-    index=initial_index,
-    format_func=lambda item_id: labels[item_id],
-)
-selected = next(item for item in items if item["id"] == selected_id)
-
-st.video(str(selected["source_video"]))
-
-next_col, reset_col = st.columns((1, 5))
-with next_col:
-    if st.button("이 영상으로 시작하기", type="primary"):
-        select_library_item(selected_id)
-        st.switch_page("pages/01_speaker_names.py")
-with reset_col:
-    if st.session_state.get("library_artifact_id") and st.button("다시 고르기"):
-        clear_selection()
-        st.rerun()
+# Korean-labelled navigation (replaces the English filename-based sidebar).
+pages = [
+    st.Page("home.py", title="처음", icon="🏠", default=True),
+    st.Page("pages/01_speaker_names.py", title="이름 정하기", icon="✏️"),
+    st.Page("pages/02_caption_position.py", title="자막 위치", icon="📍"),
+    st.Page("pages/04_render.py", title="완성 영상", icon="🎬"),
+]
+st.navigation(pages).run()
