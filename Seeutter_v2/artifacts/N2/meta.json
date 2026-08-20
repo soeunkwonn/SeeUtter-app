@@ -1,0 +1,15 @@
+{
+  "video_id": "N2",
+  "source_video": "C:\\Users\\HCAI2\\Videos\\N2_bf.mp4",
+  "artifact_dir": "D:\\seeutter\\Seeutter_v2\\artifacts\\N2",
+  "audio_path": "D:\\seeutter\\Seeutter_v2\\artifacts\\N2\\audio.wav",
+  "diarization_model": "BUT-FIT/diarizen-wavlm-large-s80-md-v2",
+  "audio": {
+    "sample_rate": 16000,
+    "channels": 1,
+    "duration_sec": 123.6266875,
+    "frames": 1978027,
+    "format": "WAV",
+    "subtype": "PCM_16"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "video_id": "N1",
+  "source_segments": "D:\\seeutter\\Seeutter_v2\\artifacts\\N1\\aligned_segments_final.json",
+  "top_k": 5,
+  "num_rows": 18,
+  "rows": [
+    {
+      "speaker_id": "FACE_1",
+      "display_name": "FACE_1",
+      "rank": 1,
+      "selected_for_labeling": true,
+      "total_speaking_sec": 10.04,
+      "share_of_speaking": 0.15527373956077944,
+      "num_turns": 6,
+      "avg_turn_sec": 1.6733333333333331,
+      "max_turn_sec": 3.1000000000000014
+    },
+    {
+      "speaker_id": "FACE_2",
+      "display_name": "FACE_2",
+      "rank": 2,
+      "selected_for_labeling": true,
+      "total_speaking_sec": 9.499999999999986,
+      "share_of_speaking": 0.1469223631302194,
+      "num_turns": 7,
+      "avg_turn_sec": 1.3571428571428552,
+      "max_turn_sec": 2.780000000000001
+    },
+    {
+      "speaker_id": "7",
+      "display_name": "7",
+      "rank": 3,
+      "selected_for_labeling": true,
+      "total_speaking_sec": 5.959999999999994,
+      "share_of_speaking": 0.09217445097432715,
+      "num_turns": 4,
+      "avg_turn_sec": 1.4899999999999984,
+      "max_turn_sec": 3.5400000000000063
+    },
+    {
+      "speaker_id": "FACE_0",
+      "display_name": "FACE_0",
+      "rank": 4,
+      "selected_for_labeling": true,
+      "total_speaking_sec": 5.440000000000005,
+      "share_of_speaking": 0.08413238478193637,
+      "num_turns": 4,
+      "avg_turn_sec": 1.3600000000000012,
+      "max_turn_sec": 2.3999999999999915
+    },
+    {
+      "speaker_id": "12",
+      "display_name": "12",
+      "rank": 5,
+      "selected_for_labeling": true,
+      "total_speaking_sec": 5.019999999999982,
+      "share_of_speaking": 0.07763686978038946,
+      "num_turns": 3,
+      "avg_turn_sec": 1.6733333333333273,
+      "max_turn_sec": 2.8000000000000114
+    },
+    {
+      "speaker_id": "4",
+      "display_name": "4",
+      "rank": 6,
+      "selected_for_labeling": false,
+      "total_speaking_sec": 4.180000000000007,
+      "share_of_speaking": 0.06464583977729674,
+      "num_turns": 4,
+      "avg_turn_sec": 1.0450000000000017,
+      "max_turn_sec": 2.0600000000000023
+    },
+    {
+      "speaker_id": "3",
+      "display_name": "3",
+      "rank": 7,
+      "selected_for_labeling": false,
+      "total_speaking_sec": 3.9399999999999977,
+      "share_of_speaking": 0.06093411691927,
+      "num_turns": 2,
+      "avg_turn_sec": 1.9699999999999989,
+      "max_turn_sec": 2.1200000000000045
+    },
+    {
+      "speaker_id": "10",
+      "display_name": "10",
+      "rank": 8,
+      "selected_for_labeling": false,
+      "total_speaking_sec": 3.280000000000001,
+      "share_of_speaking": 0.050726879059696896,
+      "num_turns": 2,
+      "avg_turn_sec": 1.6400000000000006,
+      "max_turn_sec": 2.780000000000001
+    },
+    {
+      "speaker_id": "2",
+      "display_name": "2",
+      "rank": 9,
+      "selected_for_labeling": false,
+      "total_speaking_sec": 3.160000000000011,
+      "share_of_speaking": 0.048871017630683744,
+      "num_turns": 3,
+      "avg_turn_sec": 1.053333333333337,
+      "max_turn_sec": 2.0600000000000023
+    },
+    {
+      "speaker_id": "8",
+      "display_name": "8",
+      "rank": 10,
+      "selected_for_labeling": false,
+      "total_speaking_sec": 2.8200000000000074,
+      "share_of_speaking": 0.04361274358181268,
+      "num_turns": 2,
+      "avg_turn_sec": 1.4100000000000037,
+      "max_turn_sec": 1.6000000000000014
+    },
+    {
+      "speaker_id": "9",
+      "display_name": "9",
+      "rank": 11,
+      "selected_for_labeling": false,
+      "total_speaking_sec": 2.6799999999999926,
+      "share_of_speaking": 0.04144757191463026,
+      "num_turns": 3,
+      "avg_turn_sec": 0.8933333333333309,
+      "max_turn_sec": 1.6599999999999966
+    },
+    {
+      "speaker_id": "1",
+      "display_name": "1",
+      "rank": 12,
+      "selected_for_labeling": false,
+      "total_speaking_sec": 2.6400000000000006,
+      "share_of_speaking": 0.04082895143829262,
+      "num_turns": 1,
+      "avg_turn_sec": 2.6400000000000006,
+      "max_turn_sec": 2.6400000000000006
+    },
+    {
+      "speaker_id": "6",
+      "display_name": "6",
+      "rank": 13,
+      "selected_for_labeling": false,
+      "total_speaking_sec": 2.5,
+      "share_of_speaking": 0.03866377977111043,
+      "num_turns": 2,
+      "avg_turn_sec": 1.25,
+      "max_turn_sec": 1.5600000000000023
+    },
+    {
+      "speaker_id": "0",
+      "display_name": "0",
+      "rank": 14,
+      "selected_for_labeling": false,
+      "total_speaking_sec": 1.1799999999999997,
+      "share_of_speaking": 0.018249304051964118,
+      "num_turns": 2,
+      "avg_turn_sec": 0.5899999999999999,
+      "max_turn_sec": 0.6999999999999957
+    },
+    {
+      "speaker_id": "FACE_5",
+      "display_name": "FACE_5",
+      "rank": 15,
+      "selected_for_labeling": false,
+      "total_speaking_sec": 0.8599999999999994,
+      "share_of_speaking": 0.013300340241261978,
+      "num_turns": 1,
+      "avg_turn_sec": 0.8599999999999994,
+      "max_turn_sec": 0.8599999999999994
+    },
+    {
+      "speaker_id": "5",
+      "display_name": "5",
+      "rank": 16,
+      "selected_for_labeling": false,
+      "total_speaking_sec": 0.6599999999999966,
+      "share_of_speaking": 0.0102072378595731,
+      "num_turns": 1,
+      "avg_turn_sec": 0.6599999999999966,
+      "max_turn_sec": 0.6599999999999966
+    },
+    {
+      "speaker_id": "FACE_4",
+      "display_name": "FACE_4",
+      "rank": 17,
+      "selected_for_labeling": false,
+      "total_speaking_sec": 0.4000000000000057,
+      "share_of_speaking": 0.006186204763377756,
+      "num_turns": 1,
+      "avg_turn_sec": 0.4000000000000057,
+      "max_turn_sec": 0.4000000000000057
+    },
+    {
+      "speaker_id": "11",
+      "display_name": "11",
+      "rank": 18,
+      "selected_for_labeling": false,
+      "total_speaking_sec": 0.4000000000000057,
+      "share_of_speaking": 0.006186204763377756,
+      "num_turns": 1,
+      "avg_turn_sec": 0.4000000000000057,
+      "max_turn_sec": 0.4000000000000057
+    }
+  ]
+}

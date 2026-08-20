@@ -1,0 +1,67 @@
+{
+  "video_id": "N2",
+  "source_aligned_segments": "D:\\seeutter\\Seeutter_v2\\artifacts\\N2\\aligned_segments.json",
+  "model": "gpt-5.4-mini",
+  "reasoning_effort": "low",
+  "config": {
+    "glue_gap_sec": 0.1,
+    "max_glue_overlap_sec": 0.05,
+    "pause_gap_sec": 0.3
+  },
+  "num_segments": 55,
+  "num_candidates": 2,
+  "num_moves": 0,
+  "num_merged": 9,
+  "decisions": [
+    {
+      "segment_span": [
+        0,
+        1
+      ],
+      "segment_indices": [
+        0,
+        1
+      ],
+      "labels": [
+        "5",
+        "FACE_3"
+      ],
+      "text": "I'm gonna give the last brownie as a prize to the saddest act here.",
+      "same_uninterrupted_utterance": false,
+      "target_speaker": null,
+      "resolution": "plausible_speaker_change",
+      "response_id": "resp_0cf6616a7e2fa2e9016a7f1a5b2f98819bbb14183e3e5fd652",
+      "usage": {
+        "input_tokens": 234,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 89,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 323
+      }
+    },
+    {
+      "segment_span": [
+        16,
+        17
+      ],
+      "segment_indices": [
+        16,
+        17
+      ],
+      "labels": [
+        "8",
+        "FACE_3"
+      ],
+      "text": "And unless I'm much mistaken,",
+      "same_uninterrupted_utterance": null,
+      "target_speaker": null,
+      "resolution": "ambiguous_anchor"
+    }
+  ],
+  "applied_moves": []
+}

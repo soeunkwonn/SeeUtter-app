@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+Seeutter_v2/runs/
+.env
+.streamlit/secrets.toml

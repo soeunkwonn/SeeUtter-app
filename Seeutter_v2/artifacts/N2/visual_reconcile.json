@@ -1,0 +1,71 @@
+{
+  "video_id": "N2",
+  "config": {
+    "face_dist": 0.7,
+    "local_conf_min": 0.2,
+    "local_margin": 0.15,
+    "local_min_overlap_sec": 0.12,
+    "global_conf_min": 0.65,
+    "global_margin": 0.25,
+    "global_min_speaker_dur": 2.0,
+    "det_min": 0.55,
+    "yaw_max": 35.0
+  },
+  "num_tracks": 43,
+  "num_embeddable_tracks": 39,
+  "num_faces": 6,
+  "onscreen_coverage": 0.888,
+  "global_backfill_coverage": 0.008,
+  "n_merges_fixed": 4,
+  "n_splits_fixed": 2,
+  "audio_to_faces": {
+    "5": [
+      3,
+      5
+    ],
+    "3": [
+      1,
+      4,
+      5
+    ],
+    "8": [
+      3
+    ],
+    "4": [
+      1
+    ],
+    "0": [
+      1
+    ],
+    "1": [
+      4
+    ],
+    "2": [
+      4
+    ],
+    "7": [
+      3
+    ]
+  },
+  "face_to_audios": {
+    "3": [
+      "5",
+      "7",
+      "8"
+    ],
+    "5": [
+      "3",
+      "5"
+    ],
+    "1": [
+      "0",
+      "3",
+      "4"
+    ],
+    "4": [
+      "1",
+      "2",
+      "3"
+    ]
+  }
+}

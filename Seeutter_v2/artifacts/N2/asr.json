@@ -1,0 +1,2183 @@
+{
+  "video_id": "N2",
+  "source_audio": "D:\\seeutter\\Seeutter_v2\\artifacts\\N2\\audio.wav",
+  "model": "large",
+  "task": "transcribe",
+  "word_timestamps": true,
+  "text": "I'm gonna give the last brownie as a prize to the saddest act here. Bye. All right, all right. Well, obviously it's me, isn't it? I mean, I work in a city in a job I don't understand. Everyone keeps getting promoted above me. I haven't had a girlfriend since... well, since puberty. And... nobody fancies me. And if these cheeks get any chubbier, they never will. Nonsense. I fancy you. Me? Yeah. Well, I did before you got so fat. You see? And unless I'm much mistaken, your job still pays you rather a lot of money, whilst Honey here earns 20 pence a week flogging her guts out in London's worst record store. Yes! And I haven't got hair. I've got feathers. And I've got funny, goggly eyes. And I'm attracted to cruel men. And actually, no-one will marry me because, um, my buzzies have actually started shrinking. You see, it's incredible. Yeah, but on the other hand, her best friend is Anna Scott. Oh, well, that's true. I can't deny it. I mean, she needs me. What can I say? And most of her limbs work, whereas I'm stuck in this thing day and night in a house full of ramps. And to add insult to serious injury... I've totally given up smoking. My favourite thing. And, um... Well, the truth is... we can't have a baby. That's what I am. And she's my girlfriend. Belle... C'est la vie. Still, um, we're lucky in lots of ways, but surely that's worth a brownie. Well, I don't know. I don't know. Look at William. Very unsuccessful professionally. That's true. Divorced. Used to be handsome, now kind of squidgy around the edges.",
+  "language": "en",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.3399999999999952,
+      "end": 6.12,
+      "text": "I'm gonna give the last brownie as a prize to the saddest act here.",
+      "avg_logprob": -0.23100337219238282,
+      "no_speech_prob": 0.00419186893850565,
+      "words": [
+        {
+          "start": 1.3399999999999952,
+          "end": 1.78,
+          "word": " I'm",
+          "probability": 0.9280835092067719
+        },
+        {
+          "start": 1.78,
+          "end": 1.9,
+          "word": " gonna",
+          "probability": 0.5253480076789856
+        },
+        {
+          "start": 1.9,
+          "end": 2.02,
+          "word": " give",
+          "probability": 0.9846318960189819
+        },
+        {
+          "start": 2.02,
+          "end": 2.12,
+          "word": " the",
+          "probability": 0.9980530738830566
+        },
+        {
+          "start": 2.12,
+          "end": 2.38,
+          "word": " last",
+          "probability": 0.9987589120864868
+        },
+        {
+          "start": 2.38,
+          "end": 2.94,
+          "word": " brownie",
+          "probability": 0.985736608505249
+        },
+        {
+          "start": 2.94,
+          "end": 3.36,
+          "word": " as",
+          "probability": 0.9209239482879639
+        },
+        {
+          "start": 3.36,
+          "end": 3.42,
+          "word": " a",
+          "probability": 0.9985081553459167
+        },
+        {
+          "start": 3.42,
+          "end": 3.88,
+          "word": " prize",
+          "probability": 0.990053117275238
+        },
+        {
+          "start": 3.88,
+          "end": 5.02,
+          "word": " to",
+          "probability": 0.7964219450950623
+        },
+        {
+          "start": 5.02,
+          "end": 5.18,
+          "word": " the",
+          "probability": 0.9969371557235718
+        },
+        {
+          "start": 5.18,
+          "end": 5.64,
+          "word": " saddest",
+          "probability": 0.9965334236621857
+        },
+        {
+          "start": 5.64,
+          "end": 5.84,
+          "word": " act",
+          "probability": 0.9854567646980286
+        },
+        {
+          "start": 5.84,
+          "end": 6.12,
+          "word": " here.",
+          "probability": 0.9960448145866394
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "start": 7.8,
+      "end": 8.24,
+      "text": "Bye.",
+      "avg_logprob": -0.23100337219238282,
+      "no_speech_prob": 0.00419186893850565,
+      "words": [
+        {
+          "start": 7.8,
+          "end": 8.24,
+          "word": " Bye.",
+          "probability": 0.15042084455490112
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 10.16,
+      "end": 11.2,
+      "text": "All right, all right.",
+      "avg_logprob": -0.23100337219238282,
+      "no_speech_prob": 0.00419186893850565,
+      "words": [
+        {
+          "start": 10.16,
+          "end": 10.6,
+          "word": " All",
+          "probability": 0.36468270421028137
+        },
+        {
+          "start": 10.6,
+          "end": 10.98,
+          "word": " right,",
+          "probability": 0.9980632662773132
+        },
+        {
+          "start": 10.98,
+          "end": 11.06,
+          "word": " all",
+          "probability": 0.847723126411438
+        },
+        {
+          "start": 11.06,
+          "end": 11.2,
+          "word": " right.",
+          "probability": 0.9997730851173401
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 11.3,
+      "end": 12.7,
+      "text": "Well, obviously it's me, isn't it?",
+      "avg_logprob": -0.23100337219238282,
+      "no_speech_prob": 0.00419186893850565,
+      "words": [
+        {
+          "start": 11.3,
+          "end": 11.42,
+          "word": " Well,",
+          "probability": 0.5227382779121399
+        },
+        {
+          "start": 11.42,
+          "end": 11.88,
+          "word": " obviously",
+          "probability": 0.9885321855545044
+        },
+        {
+          "start": 11.88,
+          "end": 12.12,
+          "word": " it's",
+          "probability": 0.7816684544086456
+        },
+        {
+          "start": 12.12,
+          "end": 12.28,
+          "word": " me,",
+          "probability": 0.9987362027168274
+        },
+        {
+          "start": 12.34,
+          "end": 12.56,
+          "word": " isn't",
+          "probability": 0.9986643195152283
+        },
+        {
+          "start": 12.56,
+          "end": 12.7,
+          "word": " it?",
+          "probability": 0.9993863105773926
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 12.76,
+      "end": 15.7,
+      "text": "I mean, I work in a city in a job I don't understand.",
+      "avg_logprob": -0.23100337219238282,
+      "no_speech_prob": 0.00419186893850565,
+      "words": [
+        {
+          "start": 12.76,
+          "end": 12.88,
+          "word": " I",
+          "probability": 0.996347963809967
+        },
+        {
+          "start": 12.88,
+          "end": 13.0,
+          "word": " mean,",
+          "probability": 0.8989253044128418
+        },
+        {
+          "start": 13.06,
+          "end": 14.0,
+          "word": " I",
+          "probability": 0.9983537197113037
+        },
+        {
+          "start": 14.0,
+          "end": 14.16,
+          "word": " work",
+          "probability": 0.9990648627281189
+        },
+        {
+          "start": 14.16,
+          "end": 14.34,
+          "word": " in",
+          "probability": 0.9985973238945007
+        },
+        {
+          "start": 14.34,
+          "end": 14.42,
+          "word": " a",
+          "probability": 0.8521753549575806
+        },
+        {
+          "start": 14.42,
+          "end": 14.66,
+          "word": " city",
+          "probability": 0.9987602233886719
+        },
+        {
+          "start": 14.66,
+          "end": 14.8,
+          "word": " in",
+          "probability": 0.8371964693069458
+        },
+        {
+          "start": 14.8,
+          "end": 14.86,
+          "word": " a",
+          "probability": 0.999302864074707
+        },
+        {
+          "start": 14.86,
+          "end": 15.06,
+          "word": " job",
+          "probability": 0.995682954788208
+        },
+        {
+          "start": 15.06,
+          "end": 15.18,
+          "word": " I",
+          "probability": 0.9938530921936035
+        },
+        {
+          "start": 15.18,
+          "end": 15.34,
+          "word": " don't",
+          "probability": 0.9988856911659241
+        },
+        {
+          "start": 15.34,
+          "end": 15.7,
+          "word": " understand.",
+          "probability": 0.9993090629577637
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 16.02,
+      "end": 17.86,
+      "text": "Everyone keeps getting promoted above me.",
+      "avg_logprob": -0.23100337219238282,
+      "no_speech_prob": 0.00419186893850565,
+      "words": [
+        {
+          "start": 16.02,
+          "end": 16.42,
+          "word": " Everyone",
+          "probability": 0.8682543635368347
+        },
+        {
+          "start": 16.42,
+          "end": 16.72,
+          "word": " keeps",
+          "probability": 0.9932568073272705
+        },
+        {
+          "start": 16.72,
+          "end": 16.88,
+          "word": " getting",
+          "probability": 0.9971961975097656
+        },
+        {
+          "start": 16.88,
+          "end": 17.3,
+          "word": " promoted",
+          "probability": 0.9989105463027954
+        },
+        {
+          "start": 17.3,
+          "end": 17.62,
+          "word": " above",
+          "probability": 0.9912694692611694
+        },
+        {
+          "start": 17.62,
+          "end": 17.86,
+          "word": " me.",
+          "probability": 0.9995318651199341
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 18.42,
+      "end": 20.96,
+      "text": "I haven't had a girlfriend since... well, since puberty.",
+      "avg_logprob": -0.23100337219238282,
+      "no_speech_prob": 0.00419186893850565,
+      "words": [
+        {
+          "start": 18.42,
+          "end": 18.76,
+          "word": " I",
+          "probability": 0.983960747718811
+        },
+        {
+          "start": 18.76,
+          "end": 18.9,
+          "word": " haven't",
+          "probability": 0.9849495589733124
+        },
+        {
+          "start": 18.9,
+          "end": 18.98,
+          "word": " had",
+          "probability": 0.9990397095680237
+        },
+        {
+          "start": 18.98,
+          "end": 19.08,
+          "word": " a",
+          "probability": 0.9995361566543579
+        },
+        {
+          "start": 19.08,
+          "end": 19.36,
+          "word": " girlfriend",
+          "probability": 0.9878100156784058
+        },
+        {
+          "start": 19.36,
+          "end": 19.76,
+          "word": " since...",
+          "probability": 0.6966729462146759
+        },
+        {
+          "start": 19.76,
+          "end": 20.32,
+          "word": " well,",
+          "probability": 0.6893754005432129
+        },
+        {
+          "start": 20.32,
+          "end": 20.46,
+          "word": " since",
+          "probability": 0.9947865009307861
+        },
+        {
+          "start": 20.46,
+          "end": 20.96,
+          "word": " puberty.",
+          "probability": 0.9982480406761169
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 22.75999999999999,
+      "end": 24.26,
+      "text": "And... nobody fancies me.",
+      "avg_logprob": -0.23100337219238282,
+      "no_speech_prob": 0.00419186893850565,
+      "words": [
+        {
+          "start": 22.75999999999999,
+          "end": 23.199999999999996,
+          "word": " And...",
+          "probability": 0.7352968156337738
+        },
+        {
+          "start": 23.199999999999996,
+          "end": 23.64,
+          "word": " nobody",
+          "probability": 0.8147857785224915
+        },
+        {
+          "start": 23.64,
+          "end": 24.14,
+          "word": " fancies",
+          "probability": 0.9935216307640076
+        },
+        {
+          "start": 24.14,
+          "end": 24.26,
+          "word": " me.",
+          "probability": 0.9996601343154907
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 24.62,
+      "end": 26.74,
+      "text": "And if these cheeks get any chubbier, they never will.",
+      "avg_logprob": -0.23100337219238282,
+      "no_speech_prob": 0.00419186893850565,
+      "words": [
+        {
+          "start": 24.62,
+          "end": 25.06,
+          "word": " And",
+          "probability": 0.926427960395813
+        },
+        {
+          "start": 25.06,
+          "end": 25.2,
+          "word": " if",
+          "probability": 0.9980788230895996
+        },
+        {
+          "start": 25.2,
+          "end": 25.3,
+          "word": " these",
+          "probability": 0.9846748113632202
+        },
+        {
+          "start": 25.3,
+          "end": 25.58,
+          "word": " cheeks",
+          "probability": 0.9937058091163635
+        },
+        {
+          "start": 25.58,
+          "end": 25.74,
+          "word": " get",
+          "probability": 0.9954547882080078
+        },
+        {
+          "start": 25.74,
+          "end": 25.86,
+          "word": " any",
+          "probability": 0.9719341397285461
+        },
+        {
+          "start": 25.86,
+          "end": 26.28,
+          "word": " chubbier,",
+          "probability": 0.9939617961645126
+        },
+        {
+          "start": 26.36,
+          "end": 26.42,
+          "word": " they",
+          "probability": 0.9917471408843994
+        },
+        {
+          "start": 26.42,
+          "end": 26.54,
+          "word": " never",
+          "probability": 0.9996224641799927
+        },
+        {
+          "start": 26.54,
+          "end": 26.74,
+          "word": " will.",
+          "probability": 0.9997186064720154
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 27.0,
+      "end": 28.8,
+      "text": "Nonsense. I fancy you.",
+      "avg_logprob": -0.23100337219238282,
+      "no_speech_prob": 0.00419186893850565,
+      "words": [
+        {
+          "start": 27.0,
+          "end": 27.44,
+          "word": " Nonsense.",
+          "probability": 0.9937106966972351
+        },
+        {
+          "start": 27.82,
+          "end": 28.26,
+          "word": " I",
+          "probability": 0.9965224266052246
+        },
+        {
+          "start": 28.26,
+          "end": 28.66,
+          "word": " fancy",
+          "probability": 0.9622564315795898
+        },
+        {
+          "start": 28.66,
+          "end": 28.8,
+          "word": " you.",
+          "probability": 0.799202024936676
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 30.02,
+      "end": 30.46,
+      "text": "Me?",
+      "avg_logprob": -0.1323647163283657,
+      "no_speech_prob": 0.0004976235213689506,
+      "words": [
+        {
+          "start": 30.02,
+          "end": 30.46,
+          "word": " Me?",
+          "probability": 0.10355067998170853
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 30.8,
+      "end": 33.36,
+      "text": "Yeah. Well, I did before you got so fat.",
+      "avg_logprob": -0.1323647163283657,
+      "no_speech_prob": 0.0004976235213689506,
+      "words": [
+        {
+          "start": 30.8,
+          "end": 31.24,
+          "word": " Yeah.",
+          "probability": 0.985611081123352
+        },
+        {
+          "start": 31.96,
+          "end": 32.4,
+          "word": " Well,",
+          "probability": 0.6765720844268799
+        },
+        {
+          "start": 32.42,
+          "end": 32.48,
+          "word": " I",
+          "probability": 0.999799907207489
+        },
+        {
+          "start": 32.48,
+          "end": 32.56,
+          "word": " did",
+          "probability": 0.9998179078102112
+        },
+        {
+          "start": 32.56,
+          "end": 32.72,
+          "word": " before",
+          "probability": 0.9992458820343018
+        },
+        {
+          "start": 32.72,
+          "end": 32.88,
+          "word": " you",
+          "probability": 0.9987643957138062
+        },
+        {
+          "start": 32.88,
+          "end": 33.0,
+          "word": " got",
+          "probability": 0.999648928642273
+        },
+        {
+          "start": 33.0,
+          "end": 33.12,
+          "word": " so",
+          "probability": 0.8386505246162415
+        },
+        {
+          "start": 33.12,
+          "end": 33.36,
+          "word": " fat.",
+          "probability": 0.48888564109802246
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 33.58,
+      "end": 36.5,
+      "text": "You see? And unless I'm much mistaken,",
+      "avg_logprob": -0.1323647163283657,
+      "no_speech_prob": 0.0004976235213689506,
+      "words": [
+        {
+          "start": 33.58,
+          "end": 33.7,
+          "word": " You",
+          "probability": 0.8410857915878296
+        },
+        {
+          "start": 33.7,
+          "end": 34.44,
+          "word": " see?",
+          "probability": 0.9013324975967407
+        },
+        {
+          "start": 34.96,
+          "end": 35.4,
+          "word": " And",
+          "probability": 0.9969192743301392
+        },
+        {
+          "start": 35.4,
+          "end": 35.62,
+          "word": " unless",
+          "probability": 0.9966760873794556
+        },
+        {
+          "start": 35.62,
+          "end": 35.8,
+          "word": " I'm",
+          "probability": 0.9999027848243713
+        },
+        {
+          "start": 35.8,
+          "end": 35.94,
+          "word": " much",
+          "probability": 0.9997798800468445
+        },
+        {
+          "start": 35.94,
+          "end": 36.5,
+          "word": " mistaken,",
+          "probability": 0.9999805688858032
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 36.959999999999994,
+      "end": 39.12,
+      "text": "your job still pays you rather a lot of money,",
+      "avg_logprob": -0.1323647163283657,
+      "no_speech_prob": 0.0004976235213689506,
+      "words": [
+        {
+          "start": 36.959999999999994,
+          "end": 37.4,
+          "word": " your",
+          "probability": 0.998588502407074
+        },
+        {
+          "start": 37.4,
+          "end": 37.74,
+          "word": " job",
+          "probability": 0.9996161460876465
+        },
+        {
+          "start": 37.74,
+          "end": 37.9,
+          "word": " still",
+          "probability": 0.9998155236244202
+        },
+        {
+          "start": 37.9,
+          "end": 38.18,
+          "word": " pays",
+          "probability": 0.9998766183853149
+        },
+        {
+          "start": 38.18,
+          "end": 38.3,
+          "word": " you",
+          "probability": 0.9999315738677979
+        },
+        {
+          "start": 38.3,
+          "end": 38.52,
+          "word": " rather",
+          "probability": 0.9883246421813965
+        },
+        {
+          "start": 38.52,
+          "end": 38.64,
+          "word": " a",
+          "probability": 0.9994763731956482
+        },
+        {
+          "start": 38.64,
+          "end": 38.76,
+          "word": " lot",
+          "probability": 0.9987794756889343
+        },
+        {
+          "start": 38.76,
+          "end": 38.84,
+          "word": " of",
+          "probability": 0.9998832941055298
+        },
+        {
+          "start": 38.84,
+          "end": 39.12,
+          "word": " money,",
+          "probability": 0.9999319314956665
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 39.2,
+      "end": 41.46,
+      "text": "whilst Honey here earns 20 pence a week",
+      "avg_logprob": -0.1323647163283657,
+      "no_speech_prob": 0.0004976235213689506,
+      "words": [
+        {
+          "start": 39.2,
+          "end": 39.48,
+          "word": " whilst",
+          "probability": 0.9991224408149719
+        },
+        {
+          "start": 39.48,
+          "end": 39.86,
+          "word": " Honey",
+          "probability": 0.6177306771278381
+        },
+        {
+          "start": 39.86,
+          "end": 40.18,
+          "word": " here",
+          "probability": 0.9989081621170044
+        },
+        {
+          "start": 40.18,
+          "end": 40.66,
+          "word": " earns",
+          "probability": 0.9989907145500183
+        },
+        {
+          "start": 40.66,
+          "end": 40.9,
+          "word": " 20",
+          "probability": 0.9716190099716187
+        },
+        {
+          "start": 40.9,
+          "end": 41.16,
+          "word": " pence",
+          "probability": 0.9927030801773071
+        },
+        {
+          "start": 41.16,
+          "end": 41.26,
+          "word": " a",
+          "probability": 0.9999827146530151
+        },
+        {
+          "start": 41.26,
+          "end": 41.46,
+          "word": " week",
+          "probability": 0.9999667406082153
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 41.46,
+      "end": 43.52,
+      "text": "flogging her guts out in London's worst record store.",
+      "avg_logprob": -0.1323647163283657,
+      "no_speech_prob": 0.0004976235213689506,
+      "words": [
+        {
+          "start": 41.46,
+          "end": 41.8,
+          "word": " flogging",
+          "probability": 0.9947670896848043
+        },
+        {
+          "start": 41.8,
+          "end": 41.88,
+          "word": " her",
+          "probability": 0.9984166622161865
+        },
+        {
+          "start": 41.88,
+          "end": 42.1,
+          "word": " guts",
+          "probability": 0.99989914894104
+        },
+        {
+          "start": 42.1,
+          "end": 42.3,
+          "word": " out",
+          "probability": 0.9999771118164062
+        },
+        {
+          "start": 42.3,
+          "end": 42.42,
+          "word": " in",
+          "probability": 0.9994852542877197
+        },
+        {
+          "start": 42.42,
+          "end": 42.74,
+          "word": " London's",
+          "probability": 0.9998199045658112
+        },
+        {
+          "start": 42.74,
+          "end": 42.92,
+          "word": " worst",
+          "probability": 0.9992508292198181
+        },
+        {
+          "start": 42.92,
+          "end": 43.2,
+          "word": " record",
+          "probability": 0.9973368048667908
+        },
+        {
+          "start": 43.2,
+          "end": 43.52,
+          "word": " store.",
+          "probability": 0.998802661895752
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 43.8,
+      "end": 47.14,
+      "text": "Yes! And I haven't got hair. I've got feathers.",
+      "avg_logprob": -0.1323647163283657,
+      "no_speech_prob": 0.0004976235213689506,
+      "words": [
+        {
+          "start": 43.8,
+          "end": 44.24,
+          "word": " Yes!",
+          "probability": 0.9992283582687378
+        },
+        {
+          "start": 44.88,
+          "end": 45.32,
+          "word": " And",
+          "probability": 0.9994926452636719
+        },
+        {
+          "start": 45.32,
+          "end": 45.42,
+          "word": " I",
+          "probability": 0.9999687671661377
+        },
+        {
+          "start": 45.42,
+          "end": 45.56,
+          "word": " haven't",
+          "probability": 0.9996126890182495
+        },
+        {
+          "start": 45.56,
+          "end": 45.68,
+          "word": " got",
+          "probability": 0.9999887943267822
+        },
+        {
+          "start": 45.68,
+          "end": 45.96,
+          "word": " hair.",
+          "probability": 0.9999421834945679
+        },
+        {
+          "start": 46.16,
+          "end": 46.56,
+          "word": " I've",
+          "probability": 0.9888856112957001
+        },
+        {
+          "start": 46.56,
+          "end": 46.6,
+          "word": " got",
+          "probability": 0.9999690055847168
+        },
+        {
+          "start": 46.6,
+          "end": 47.14,
+          "word": " feathers.",
+          "probability": 0.9998989105224609
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 47.56,
+      "end": 48.96,
+      "text": "And I've got funny, goggly eyes.",
+      "avg_logprob": -0.1323647163283657,
+      "no_speech_prob": 0.0004976235213689506,
+      "words": [
+        {
+          "start": 47.56,
+          "end": 48.0,
+          "word": " And",
+          "probability": 0.9980260133743286
+        },
+        {
+          "start": 48.0,
+          "end": 48.12,
+          "word": " I've",
+          "probability": 0.9999418258666992
+        },
+        {
+          "start": 48.12,
+          "end": 48.18,
+          "word": " got",
+          "probability": 0.9999779462814331
+        },
+        {
+          "start": 48.18,
+          "end": 48.42,
+          "word": " funny,",
+          "probability": 0.999915361404419
+        },
+        {
+          "start": 48.44,
+          "end": 48.68,
+          "word": " goggly",
+          "probability": 0.9256145060062408
+        },
+        {
+          "start": 48.68,
+          "end": 48.96,
+          "word": " eyes.",
+          "probability": 0.9999270439147949
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 49.38,
+      "end": 51.28,
+      "text": "And I'm attracted to cruel men.",
+      "avg_logprob": -0.1323647163283657,
+      "no_speech_prob": 0.0004976235213689506,
+      "words": [
+        {
+          "start": 49.38,
+          "end": 49.82,
+          "word": " And",
+          "probability": 0.9989513158798218
+        },
+        {
+          "start": 49.82,
+          "end": 50.02,
+          "word": " I'm",
+          "probability": 0.9999174475669861
+        },
+        {
+          "start": 50.02,
+          "end": 50.22,
+          "word": " attracted",
+          "probability": 0.9991347193717957
+        },
+        {
+          "start": 50.22,
+          "end": 50.52,
+          "word": " to",
+          "probability": 0.9999752044677734
+        },
+        {
+          "start": 50.52,
+          "end": 50.84,
+          "word": " cruel",
+          "probability": 0.9994248151779175
+        },
+        {
+          "start": 50.84,
+          "end": 51.28,
+          "word": " men.",
+          "probability": 0.9997625946998596
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 52.56,
+      "end": 54.42,
+      "text": "And actually, no-one will marry me",
+      "avg_logprob": -0.1323647163283657,
+      "no_speech_prob": 0.0004976235213689506,
+      "words": [
+        {
+          "start": 52.56,
+          "end": 53.0,
+          "word": " And",
+          "probability": 0.9991318583488464
+        },
+        {
+          "start": 53.0,
+          "end": 53.44,
+          "word": " actually,",
+          "probability": 0.3409658968448639
+        },
+        {
+          "start": 53.54,
+          "end": 53.72,
+          "word": " no",
+          "probability": 0.99959796667099
+        },
+        {
+          "start": 53.72,
+          "end": 53.86,
+          "word": "-one",
+          "probability": 0.9314969182014465
+        },
+        {
+          "start": 53.86,
+          "end": 53.96,
+          "word": " will",
+          "probability": 0.999976634979248
+        },
+        {
+          "start": 53.96,
+          "end": 54.2,
+          "word": " marry",
+          "probability": 0.9999591112136841
+        },
+        {
+          "start": 54.2,
+          "end": 54.42,
+          "word": " me",
+          "probability": 0.9999696016311646
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 54.42,
+      "end": 57.08,
+      "text": "because, um, my buzzies have actually started shrinking.",
+      "avg_logprob": -0.1323647163283657,
+      "no_speech_prob": 0.0004976235213689506,
+      "words": [
+        {
+          "start": 54.42,
+          "end": 54.7,
+          "word": " because,",
+          "probability": 0.8605368733406067
+        },
+        {
+          "start": 54.82,
+          "end": 55.1,
+          "word": " um,",
+          "probability": 0.9668331742286682
+        },
+        {
+          "start": 55.12,
+          "end": 55.56,
+          "word": " my",
+          "probability": 0.9997939467430115
+        },
+        {
+          "start": 55.56,
+          "end": 55.92,
+          "word": " buzzies",
+          "probability": 0.7838013768196106
+        },
+        {
+          "start": 55.92,
+          "end": 56.04,
+          "word": " have",
+          "probability": 0.9999783039093018
+        },
+        {
+          "start": 56.04,
+          "end": 56.24,
+          "word": " actually",
+          "probability": 0.9998140931129456
+        },
+        {
+          "start": 56.24,
+          "end": 56.56,
+          "word": " started",
+          "probability": 0.9998776912689209
+        },
+        {
+          "start": 56.56,
+          "end": 57.08,
+          "word": " shrinking.",
+          "probability": 0.99993896484375
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 57.38,
+      "end": 58.54,
+      "text": "You see, it's incredible.",
+      "avg_logprob": -0.1323647163283657,
+      "no_speech_prob": 0.0004976235213689506,
+      "words": [
+        {
+          "start": 57.38,
+          "end": 57.5,
+          "word": " You",
+          "probability": 0.4832250475883484
+        },
+        {
+          "start": 57.5,
+          "end": 57.8,
+          "word": " see,",
+          "probability": 0.9934999346733093
+        },
+        {
+          "start": 58.0,
+          "end": 58.16,
+          "word": " it's",
+          "probability": 0.8166153430938721
+        },
+        {
+          "start": 58.16,
+          "end": 58.54,
+          "word": " incredible.",
+          "probability": 0.9861820936203003
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 58.8,
+      "end": 61.22,
+      "text": "Yeah, but on the other hand, her best friend is Anna Scott.",
+      "avg_logprob": -0.09926210021972656,
+      "no_speech_prob": 0.0008315411396324635,
+      "words": [
+        {
+          "start": 58.8,
+          "end": 59.22,
+          "word": " Yeah,",
+          "probability": 0.495278537273407
+        },
+        {
+          "start": 59.3,
+          "end": 59.44,
+          "word": " but",
+          "probability": 0.9904537200927734
+        },
+        {
+          "start": 59.44,
+          "end": 59.6,
+          "word": " on",
+          "probability": 0.9592750668525696
+        },
+        {
+          "start": 59.6,
+          "end": 59.7,
+          "word": " the",
+          "probability": 0.9997596144676208
+        },
+        {
+          "start": 59.7,
+          "end": 59.86,
+          "word": " other",
+          "probability": 0.9994959831237793
+        },
+        {
+          "start": 59.86,
+          "end": 60.12,
+          "word": " hand,",
+          "probability": 0.9984388947486877
+        },
+        {
+          "start": 60.16,
+          "end": 60.24,
+          "word": " her",
+          "probability": 0.9921730756759644
+        },
+        {
+          "start": 60.24,
+          "end": 60.4,
+          "word": " best",
+          "probability": 0.9986188411712646
+        },
+        {
+          "start": 60.4,
+          "end": 60.62,
+          "word": " friend",
+          "probability": 0.9985585808753967
+        },
+        {
+          "start": 60.62,
+          "end": 60.8,
+          "word": " is",
+          "probability": 0.9952994585037231
+        },
+        {
+          "start": 60.8,
+          "end": 61.0,
+          "word": " Anna",
+          "probability": 0.9896687865257263
+        },
+        {
+          "start": 61.0,
+          "end": 61.22,
+          "word": " Scott.",
+          "probability": 0.9940292835235596
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 61.48,
+      "end": 62.84,
+      "text": "Oh, well, that's true. I can't deny it.",
+      "avg_logprob": -0.09926210021972656,
+      "no_speech_prob": 0.0008315411396324635,
+      "words": [
+        {
+          "start": 61.48,
+          "end": 61.54,
+          "word": " Oh,",
+          "probability": 0.7826051712036133
+        },
+        {
+          "start": 61.62,
+          "end": 61.64,
+          "word": " well,",
+          "probability": 0.9369791150093079
+        },
+        {
+          "start": 61.68,
+          "end": 61.86,
+          "word": " that's",
+          "probability": 0.9991389513015747
+        },
+        {
+          "start": 61.86,
+          "end": 62.04,
+          "word": " true.",
+          "probability": 0.9998272061347961
+        },
+        {
+          "start": 62.1,
+          "end": 62.18,
+          "word": " I",
+          "probability": 0.9987402558326721
+        },
+        {
+          "start": 62.18,
+          "end": 62.4,
+          "word": " can't",
+          "probability": 0.9996185600757599
+        },
+        {
+          "start": 62.4,
+          "end": 62.64,
+          "word": " deny",
+          "probability": 0.9997890591621399
+        },
+        {
+          "start": 62.64,
+          "end": 62.84,
+          "word": " it.",
+          "probability": 0.9993942975997925
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "start": 62.86,
+      "end": 64.22,
+      "text": "I mean, she needs me. What can I say?",
+      "avg_logprob": -0.09926210021972656,
+      "no_speech_prob": 0.0008315411396324635,
+      "words": [
+        {
+          "start": 62.86,
+          "end": 62.98,
+          "word": " I",
+          "probability": 0.9949190020561218
+        },
+        {
+          "start": 62.98,
+          "end": 63.06,
+          "word": " mean,",
+          "probability": 0.999825656414032
+        },
+        {
+          "start": 63.08,
+          "end": 63.18,
+          "word": " she",
+          "probability": 0.9995346069335938
+        },
+        {
+          "start": 63.18,
+          "end": 63.42,
+          "word": " needs",
+          "probability": 0.9955068826675415
+        },
+        {
+          "start": 63.42,
+          "end": 63.64,
+          "word": " me.",
+          "probability": 0.9997733235359192
+        },
+        {
+          "start": 63.7,
+          "end": 63.8,
+          "word": " What",
+          "probability": 0.9978258013725281
+        },
+        {
+          "start": 63.8,
+          "end": 63.92,
+          "word": " can",
+          "probability": 0.9998319149017334
+        },
+        {
+          "start": 63.92,
+          "end": 64.04,
+          "word": " I",
+          "probability": 0.999824583530426
+        },
+        {
+          "start": 64.04,
+          "end": 64.22,
+          "word": " say?",
+          "probability": 0.9994742274284363
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "start": 66.66,
+      "end": 69.88,
+      "text": "And most of her limbs work, whereas I'm stuck in this thing",
+      "avg_logprob": -0.09926210021972656,
+      "no_speech_prob": 0.0008315411396324635,
+      "words": [
+        {
+          "start": 66.66,
+          "end": 67.02,
+          "word": " And",
+          "probability": 0.9400134682655334
+        },
+        {
+          "start": 67.02,
+          "end": 67.3,
+          "word": " most",
+          "probability": 0.9991493225097656
+        },
+        {
+          "start": 67.3,
+          "end": 67.52,
+          "word": " of",
+          "probability": 0.9997890591621399
+        },
+        {
+          "start": 67.52,
+          "end": 67.64,
+          "word": " her",
+          "probability": 0.9998206496238708
+        },
+        {
+          "start": 67.64,
+          "end": 67.88,
+          "word": " limbs",
+          "probability": 0.9985275268554688
+        },
+        {
+          "start": 67.88,
+          "end": 68.14,
+          "word": " work,",
+          "probability": 0.9970709085464478
+        },
+        {
+          "start": 68.18,
+          "end": 68.4,
+          "word": " whereas",
+          "probability": 0.9978004097938538
+        },
+        {
+          "start": 68.4,
+          "end": 69.2,
+          "word": " I'm",
+          "probability": 0.9660145342350006
+        },
+        {
+          "start": 69.2,
+          "end": 69.36,
+          "word": " stuck",
+          "probability": 0.9994992017745972
+        },
+        {
+          "start": 69.36,
+          "end": 69.56,
+          "word": " in",
+          "probability": 0.9994630217552185
+        },
+        {
+          "start": 69.56,
+          "end": 69.7,
+          "word": " this",
+          "probability": 0.9998424053192139
+        },
+        {
+          "start": 69.7,
+          "end": 69.88,
+          "word": " thing",
+          "probability": 0.9996490478515625
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "start": 69.88,
+      "end": 71.68,
+      "text": "day and night in a house full of ramps.",
+      "avg_logprob": -0.09926210021972656,
+      "no_speech_prob": 0.0008315411396324635,
+      "words": [
+        {
+          "start": 69.88,
+          "end": 70.08,
+          "word": " day",
+          "probability": 0.9921686053276062
+        },
+        {
+          "start": 70.08,
+          "end": 70.26,
+          "word": " and",
+          "probability": 0.9997771382331848
+        },
+        {
+          "start": 70.26,
+          "end": 70.48,
+          "word": " night",
+          "probability": 0.9999083280563354
+        },
+        {
+          "start": 70.48,
+          "end": 70.64,
+          "word": " in",
+          "probability": 0.8239356279373169
+        },
+        {
+          "start": 70.64,
+          "end": 70.68,
+          "word": " a",
+          "probability": 0.9995449185371399
+        },
+        {
+          "start": 70.68,
+          "end": 70.9,
+          "word": " house",
+          "probability": 0.9998822212219238
+        },
+        {
+          "start": 70.9,
+          "end": 71.08,
+          "word": " full",
+          "probability": 0.9987033605575562
+        },
+        {
+          "start": 71.08,
+          "end": 71.24,
+          "word": " of",
+          "probability": 0.9999253749847412
+        },
+        {
+          "start": 71.24,
+          "end": 71.68,
+          "word": " ramps.",
+          "probability": 0.996088981628418
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "start": 72.18,
+      "end": 74.6,
+      "text": "And to add insult to serious injury...",
+      "avg_logprob": -0.09926210021972656,
+      "no_speech_prob": 0.0008315411396324635,
+      "words": [
+        {
+          "start": 72.18,
+          "end": 72.54,
+          "word": " And",
+          "probability": 0.9935626983642578
+        },
+        {
+          "start": 72.54,
+          "end": 72.7,
+          "word": " to",
+          "probability": 0.9986041188240051
+        },
+        {
+          "start": 72.7,
+          "end": 72.86,
+          "word": " add",
+          "probability": 0.9996334314346313
+        },
+        {
+          "start": 72.86,
+          "end": 73.22,
+          "word": " insult",
+          "probability": 0.9997959733009338
+        },
+        {
+          "start": 73.22,
+          "end": 73.38,
+          "word": " to",
+          "probability": 0.9947403073310852
+        },
+        {
+          "start": 73.38,
+          "end": 73.6,
+          "word": " serious",
+          "probability": 0.9970594048500061
+        },
+        {
+          "start": 73.6,
+          "end": 74.6,
+          "word": " injury...",
+          "probability": 0.6090372875332832
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "start": 75.92,
+      "end": 77.3,
+      "text": "I've totally given up smoking.",
+      "avg_logprob": -0.09926210021972656,
+      "no_speech_prob": 0.0008315411396324635,
+      "words": [
+        {
+          "start": 75.92,
+          "end": 76.28,
+          "word": " I've",
+          "probability": 0.9312793016433716
+        },
+        {
+          "start": 76.28,
+          "end": 76.52,
+          "word": " totally",
+          "probability": 0.9993552565574646
+        },
+        {
+          "start": 76.52,
+          "end": 76.74,
+          "word": " given",
+          "probability": 0.99949049949646
+        },
+        {
+          "start": 76.74,
+          "end": 76.98,
+          "word": " up",
+          "probability": 0.9999288320541382
+        },
+        {
+          "start": 76.98,
+          "end": 77.3,
+          "word": " smoking.",
+          "probability": 0.9997524619102478
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "start": 78.02,
+      "end": 79.1,
+      "text": "My favourite thing.",
+      "avg_logprob": -0.09926210021972656,
+      "no_speech_prob": 0.0008315411396324635,
+      "words": [
+        {
+          "start": 78.02,
+          "end": 78.38,
+          "word": " My",
+          "probability": 0.9902031421661377
+        },
+        {
+          "start": 78.38,
+          "end": 78.74,
+          "word": " favourite",
+          "probability": 0.7766544818878174
+        },
+        {
+          "start": 78.74,
+          "end": 79.1,
+          "word": " thing.",
+          "probability": 0.9997830986976624
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "start": 81.06,
+      "end": 81.78,
+      "text": "And, um...",
+      "avg_logprob": -0.09926210021972656,
+      "no_speech_prob": 0.0008315411396324635,
+      "words": [
+        {
+          "start": 81.06,
+          "end": 81.42,
+          "word": " And,",
+          "probability": 0.9976366758346558
+        },
+        {
+          "start": 81.42,
+          "end": 81.78,
+          "word": " um...",
+          "probability": 0.9702045023441315
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "start": 82.92,
+      "end": 83.98,
+      "text": "Well, the truth is...",
+      "avg_logprob": -0.09926210021972656,
+      "no_speech_prob": 0.0008315411396324635,
+      "words": [
+        {
+          "start": 82.92,
+          "end": 83.28,
+          "word": " Well,",
+          "probability": 0.9706117510795593
+        },
+        {
+          "start": 83.32,
+          "end": 83.36,
+          "word": " the",
+          "probability": 0.9998125433921814
+        },
+        {
+          "start": 83.36,
+          "end": 83.58,
+          "word": " truth",
+          "probability": 0.9994275569915771
+        },
+        {
+          "start": 83.58,
+          "end": 83.98,
+          "word": " is...",
+          "probability": 0.9088240265846252
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "start": 85.0,
+      "end": 86.2,
+      "text": "we can't have a baby.",
+      "avg_logprob": -0.09926210021972656,
+      "no_speech_prob": 0.0008315411396324635,
+      "words": [
+        {
+          "start": 85.0,
+          "end": 85.36,
+          "word": " we",
+          "probability": 0.705978274345398
+        },
+        {
+          "start": 85.36,
+          "end": 85.7,
+          "word": " can't",
+          "probability": 0.999940037727356
+        },
+        {
+          "start": 85.7,
+          "end": 85.82,
+          "word": " have",
+          "probability": 0.9999245405197144
+        },
+        {
+          "start": 85.82,
+          "end": 85.92,
+          "word": " a",
+          "probability": 0.9997337460517883
+        },
+        {
+          "start": 85.92,
+          "end": 86.2,
+          "word": " baby.",
+          "probability": 0.9999526739120483
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "start": 92.8,
+      "end": 93.32,
+      "text": "That's what I am.",
+      "avg_logprob": -0.8185297846794128,
+      "no_speech_prob": 0.0016811150126159191,
+      "words": [
+        {
+          "start": 92.8,
+          "end": 93.28,
+          "word": " That's",
+          "probability": 0.17026615550275892
+        },
+        {
+          "start": 93.28,
+          "end": 93.3,
+          "word": " what",
+          "probability": 0.029957987368106842
+        },
+        {
+          "start": 93.3,
+          "end": 93.32,
+          "word": " I",
+          "probability": 0.6109300851821899
+        },
+        {
+          "start": 93.32,
+          "end": 93.32,
+          "word": " am.",
+          "probability": 0.005288624204695225
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "start": 93.32,
+      "end": 93.42,
+      "text": "And she's my girlfriend.",
+      "avg_logprob": -0.8185297846794128,
+      "no_speech_prob": 0.0016811150126159191,
+      "words": [
+        {
+          "start": 93.32,
+          "end": 93.32,
+          "word": " And",
+          "probability": 0.006316464859992266
+        },
+        {
+          "start": 93.32,
+          "end": 93.42,
+          "word": " she's",
+          "probability": 0.11068815807811916
+        },
+        {
+          "start": 93.42,
+          "end": 93.42,
+          "word": " my",
+          "probability": 0.028875300660729408
+        },
+        {
+          "start": 93.42,
+          "end": 93.42,
+          "word": " girlfriend.",
+          "probability": 0.04922403767704964
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "start": 93.42,
+      "end": 93.7,
+      "text": "Belle...",
+      "avg_logprob": -0.8185297846794128,
+      "no_speech_prob": 0.0016811150126159191,
+      "words": [
+        {
+          "start": 93.42,
+          "end": 93.7,
+          "word": " Belle...",
+          "probability": 0.059649210423231125
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "start": 95.8,
+      "end": 96.62,
+      "text": "C'est la vie.",
+      "avg_logprob": -0.8185297846794128,
+      "no_speech_prob": 0.0016811150126159191,
+      "words": [
+        {
+          "start": 95.8,
+          "end": 96.28,
+          "word": " C",
+          "probability": 0.4023650884628296
+        },
+        {
+          "start": 96.28,
+          "end": 96.42,
+          "word": "'est",
+          "probability": 0.9934675395488739
+        },
+        {
+          "start": 96.42,
+          "end": 96.5,
+          "word": " la",
+          "probability": 0.8838855624198914
+        },
+        {
+          "start": 96.5,
+          "end": 96.62,
+          "word": " vie.",
+          "probability": 0.9939437508583069
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "start": 100.88,
+      "end": 103.48,
+      "text": "Still, um, we're lucky in lots of ways,",
+      "avg_logprob": -0.8185297846794128,
+      "no_speech_prob": 0.0016811150126159191,
+      "words": [
+        {
+          "start": 100.88,
+          "end": 101.36,
+          "word": " Still,",
+          "probability": 0.12152011692523956
+        },
+        {
+          "start": 101.42,
+          "end": 101.56,
+          "word": " um,",
+          "probability": 0.1763336956501007
+        },
+        {
+          "start": 101.58,
+          "end": 101.88,
+          "word": " we're",
+          "probability": 0.9733294248580933
+        },
+        {
+          "start": 101.88,
+          "end": 102.16,
+          "word": " lucky",
+          "probability": 0.9962137341499329
+        },
+        {
+          "start": 102.16,
+          "end": 102.38,
+          "word": " in",
+          "probability": 0.8742230534553528
+        },
+        {
+          "start": 102.38,
+          "end": 103.08,
+          "word": " lots",
+          "probability": 0.9194082021713257
+        },
+        {
+          "start": 103.08,
+          "end": 103.24,
+          "word": " of",
+          "probability": 0.9991263747215271
+        },
+        {
+          "start": 103.24,
+          "end": 103.48,
+          "word": " ways,",
+          "probability": 0.9995700716972351
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "start": 104.17999999999999,
+      "end": 106.04,
+      "text": "but surely that's worth a brownie.",
+      "avg_logprob": -0.8185297846794128,
+      "no_speech_prob": 0.0016811150126159191,
+      "words": [
+        {
+          "start": 104.17999999999999,
+          "end": 104.66,
+          "word": " but",
+          "probability": 0.9916002750396729
+        },
+        {
+          "start": 104.66,
+          "end": 105.12,
+          "word": " surely",
+          "probability": 0.9463895559310913
+        },
+        {
+          "start": 105.12,
+          "end": 105.48,
+          "word": " that's",
+          "probability": 0.9803418517112732
+        },
+        {
+          "start": 105.48,
+          "end": 105.6,
+          "word": " worth",
+          "probability": 0.9583709239959717
+        },
+        {
+          "start": 105.6,
+          "end": 105.7,
+          "word": " a",
+          "probability": 0.959265410900116
+        },
+        {
+          "start": 105.7,
+          "end": 106.04,
+          "word": " brownie.",
+          "probability": 0.9759202003479004
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "start": 108.78,
+      "end": 110.34,
+      "text": "Well, I don't know.",
+      "avg_logprob": -0.8185297846794128,
+      "no_speech_prob": 0.0016811150126159191,
+      "words": [
+        {
+          "start": 108.78,
+          "end": 109.26,
+          "word": " Well,",
+          "probability": 0.9313207268714905
+        },
+        {
+          "start": 109.48,
+          "end": 109.72,
+          "word": " I",
+          "probability": 0.9967658519744873
+        },
+        {
+          "start": 109.72,
+          "end": 110.1,
+          "word": " don't",
+          "probability": 0.9990276396274567
+        },
+        {
+          "start": 110.1,
+          "end": 110.34,
+          "word": " know.",
+          "probability": 0.9980663657188416
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "start": 110.34,
+      "end": 110.6,
+      "text": "I don't know.",
+      "avg_logprob": -0.26889169216156006,
+      "no_speech_prob": 0.02962692826986313,
+      "words": [
+        {
+          "start": 110.34,
+          "end": 110.46,
+          "word": " I",
+          "probability": 0.28178802132606506
+        },
+        {
+          "start": 110.46,
+          "end": 110.54,
+          "word": " don't",
+          "probability": 0.940502941608429
+        },
+        {
+          "start": 110.54,
+          "end": 110.6,
+          "word": " know.",
+          "probability": 0.9969037175178528
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "start": 112.04,
+      "end": 112.82,
+      "text": "Look at William.",
+      "avg_logprob": -0.26889169216156006,
+      "no_speech_prob": 0.02962692826986313,
+      "words": [
+        {
+          "start": 112.04,
+          "end": 112.4,
+          "word": " Look",
+          "probability": 0.9851321578025818
+        },
+        {
+          "start": 112.4,
+          "end": 112.52,
+          "word": " at",
+          "probability": 0.9986141920089722
+        },
+        {
+          "start": 112.52,
+          "end": 112.82,
+          "word": " William.",
+          "probability": 0.9883037805557251
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "start": 114.46000000000001,
+      "end": 115.9,
+      "text": "Very unsuccessful professionally.",
+      "avg_logprob": -0.26889169216156006,
+      "no_speech_prob": 0.02962692826986313,
+      "words": [
+        {
+          "start": 114.46000000000001,
+          "end": 114.82000000000001,
+          "word": " Very",
+          "probability": 0.9470014572143555
+        },
+        {
+          "start": 114.82000000000001,
+          "end": 115.18,
+          "word": " unsuccessful",
+          "probability": 0.9967621564865112
+        },
+        {
+          "start": 115.18,
+          "end": 115.9,
+          "word": " professionally.",
+          "probability": 0.8204869031906128
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "start": 116.5,
+      "end": 117.02,
+      "text": "That's true.",
+      "avg_logprob": -0.26889169216156006,
+      "no_speech_prob": 0.02962692826986313,
+      "words": [
+        {
+          "start": 116.5,
+          "end": 116.86,
+          "word": " That's",
+          "probability": 0.8327595293521881
+        },
+        {
+          "start": 116.86,
+          "end": 117.02,
+          "word": " true.",
+          "probability": 0.9976364374160767
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "start": 117.48,
+      "end": 117.84,
+      "text": "Divorced.",
+      "avg_logprob": -0.26889169216156006,
+      "no_speech_prob": 0.02962692826986313,
+      "words": [
+        {
+          "start": 117.48,
+          "end": 117.84,
+          "word": " Divorced.",
+          "probability": 0.9938195943832397
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "start": 118.94,
+      "end": 121.52,
+      "text": "Used to be handsome, now kind of squidgy around the edges.",
+      "avg_logprob": -0.26889169216156006,
+      "no_speech_prob": 0.02962692826986313,
+      "words": [
+        {
+          "start": 118.94,
+          "end": 119.3,
+          "word": " Used",
+          "probability": 0.9933857321739197
+        },
+        {
+          "start": 119.3,
+          "end": 119.46,
+          "word": " to",
+          "probability": 0.9997057318687439
+        },
+        {
+          "start": 119.46,
+          "end": 119.5,
+          "word": " be",
+          "probability": 0.9996399879455566
+        },
+        {
+          "start": 119.5,
+          "end": 119.84,
+          "word": " handsome,",
+          "probability": 0.9993880987167358
+        },
+        {
+          "start": 119.9,
+          "end": 120.0,
+          "word": " now",
+          "probability": 0.9975512623786926
+        },
+        {
+          "start": 120.0,
+          "end": 120.2,
+          "word": " kind",
+          "probability": 0.9796778559684753
+        },
+        {
+          "start": 120.2,
+          "end": 120.36,
+          "word": " of",
+          "probability": 0.9992485642433167
+        },
+        {
+          "start": 120.36,
+          "end": 121.06,
+          "word": " squidgy",
+          "probability": 0.9679981470108032
+        },
+        {
+          "start": 121.06,
+          "end": 121.2,
+          "word": " around",
+          "probability": 0.6592894196510315
+        },
+        {
+          "start": 121.2,
+          "end": 121.3,
+          "word": " the",
+          "probability": 0.9995988011360168
+        },
+        {
+          "start": 121.3,
+          "end": 121.52,
+          "word": " edges.",
+          "probability": 0.9998194575309753
+        }
+      ]
+    }
+  ],
+  "num_segments": 46,
+  "num_words": 285
+}

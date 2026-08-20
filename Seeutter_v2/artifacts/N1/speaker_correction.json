@@ -1,0 +1,1365 @@
+{
+  "video_id": "N1",
+  "source_aligned_segments": "D:\\seeutter\\Seeutter_v2\\artifacts\\N1\\aligned_segments_gap_corrected.json",
+  "corrected_aligned_segments": "D:\\seeutter\\Seeutter_v2\\artifacts\\N1\\aligned_segments_corrected.json",
+  "final_aligned_segments": "D:\\seeutter\\Seeutter_v2\\artifacts\\N1\\aligned_segments_final.json",
+  "model": "gpt-5.4-mini",
+  "reasoning_effort": "low",
+  "config": {
+    "max_candidate_duration_sec": 3.0,
+    "run_merge_gap_sec": 1.5,
+    "max_boundary_gap_sec": 1.5,
+    "max_boundary_overlap_sec": 0.05,
+    "context_run_count": 3,
+    "verify_adjustments": true,
+    "boundary_fragment_max_duration_sec": 0.5,
+    "boundary_fragment_max_words": 2,
+    "boundary_word_max_coverage": 0.5,
+    "destination_word_min_coverage": 0.75,
+    "semantic_boundary_max_words": 2,
+    "semantic_boundary_max_duration_sec": 0.65,
+    "semantic_boundary_max_gap_sec": 0.1,
+    "semantic_target_min_visual_share": 0.75
+  },
+  "semantic_boundary_repairs": [],
+  "num_semantic_boundary_repairs": 0,
+  "num_runs": 33,
+  "num_candidates": 23,
+  "num_boundary_handled_skips": 2,
+  "num_proposals": 5,
+  "num_corrections": 1,
+  "runs": [
+    {
+      "run_index": 0,
+      "speaker": "UNKNOWN",
+      "segment_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "start": 5.640000000000001,
+      "end": 14.9,
+      "span_duration": 9.26,
+      "speech_duration": 8.040000000000001,
+      "text": "No crime in a broken-down car. No crime being Negro, neither. Button it up, Mary. Nobody wants to go to jail behind your mouth. I'll do my best, sugar."
+    },
+    {
+      "run_index": 1,
+      "speaker": "1",
+      "segment_indices": [
+        5
+      ],
+      "start": 28.16,
+      "end": 30.8,
+      "span_duration": 2.6400000000000006,
+      "speech_duration": 2.6400000000000006,
+      "text": "Not a great place for three of y'all to be having car trouble."
+    },
+    {
+      "run_index": 2,
+      "speaker": "9",
+      "segment_indices": [
+        6,
+        7,
+        8
+      ],
+      "start": 31.32,
+      "end": 34.58,
+      "span_duration": 3.259999999999998,
+      "speech_duration": 2.6799999999999926,
+      "text": "We didn't pick the place, officer. They picked us. You"
+    },
+    {
+      "run_index": 3,
+      "speaker": "FACE_2",
+      "segment_indices": [
+        9
+      ],
+      "start": 34.58,
+      "end": 35.2,
+      "span_duration": 0.6200000000000045,
+      "speech_duration": 0.6200000000000045,
+      "text": "being disrespectful?"
+    },
+    {
+      "run_index": 4,
+      "speaker": "FACE_0",
+      "segment_indices": [
+        10
+      ],
+      "start": 35.96,
+      "end": 36.58,
+      "span_duration": 0.6199999999999974,
+      "speech_duration": 0.6199999999999974,
+      "text": "No, sir."
+    },
+    {
+      "run_index": 5,
+      "speaker": "FACE_2",
+      "segment_indices": [
+        11
+      ],
+      "start": 37.54,
+      "end": 40.32,
+      "span_duration": 2.780000000000001,
+      "speech_duration": 2.780000000000001,
+      "text": "You have identification on you? Yes, sir. Yes, sir."
+    },
+    {
+      "run_index": 6,
+      "speaker": "8",
+      "segment_indices": [
+        12,
+        13
+      ],
+      "start": 42.58,
+      "end": 45.7,
+      "span_duration": 3.1200000000000045,
+      "speech_duration": 2.8200000000000074,
+      "text": "We're just on our way to work. We're going to be in the car. At Langley?"
+    },
+    {
+      "run_index": 7,
+      "speaker": "6",
+      "segment_indices": [
+        14,
+        15
+      ],
+      "start": 46.86,
+      "end": 49.5,
+      "span_duration": 2.6400000000000006,
+      "speech_duration": 2.5,
+      "text": "NASA, sir. We do a great deal of the calculating."
+    },
+    {
+      "run_index": 8,
+      "speaker": "FACE_1",
+      "segment_indices": [
+        16
+      ],
+      "start": 50.1,
+      "end": 51.62,
+      "span_duration": 1.519999999999996,
+      "speech_duration": 1.519999999999996,
+      "text": "Getting our rockets into space."
+    },
+    {
+      "run_index": 9,
+      "speaker": "FACE_2",
+      "segment_indices": [
+        17,
+        18
+      ],
+      "start": 52.14,
+      "end": 53.7,
+      "span_duration": 1.5600000000000023,
+      "speech_duration": 1.3599999999999994,
+      "text": "All three of you? Yes, sir."
+    },
+    {
+      "run_index": 10,
+      "speaker": "5",
+      "segment_indices": [
+        19
+      ],
+      "start": 53.74,
+      "end": 54.4,
+      "span_duration": 0.6599999999999966,
+      "speech_duration": 0.6599999999999966,
+      "text": "Yes, officer."
+    },
+    {
+      "run_index": 11,
+      "speaker": "0",
+      "segment_indices": [
+        20,
+        21
+      ],
+      "start": 56.22,
+      "end": 58.04,
+      "span_duration": 1.8200000000000003,
+      "speech_duration": 1.1799999999999997,
+      "text": "NASA? That's something."
+    },
+    {
+      "run_index": 12,
+      "speaker": "FACE_1",
+      "segment_indices": [
+        22,
+        23
+      ],
+      "start": 59.36,
+      "end": 65.06,
+      "span_duration": 5.700000000000003,
+      "speech_duration": 5.18,
+      "text": "I had no idea they hired. There are quite a few women working in the space program."
+    },
+    {
+      "run_index": 13,
+      "speaker": "2",
+      "segment_indices": [
+        24,
+        25
+      ],
+      "start": 74.38,
+      "end": 78.06,
+      "span_duration": 3.680000000000007,
+      "speech_duration": 2.460000000000008,
+      "text": "I'm afraid we're going to have to go to the moon. Damn Russians are watching us right now. Sputniks."
+    },
+    {
+      "run_index": 14,
+      "speaker": "FACE_2",
+      "segment_indices": [
+        26
+      ],
+      "start": 79.68,
+      "end": 81.28,
+      "span_duration": 1.5999999999999943,
+      "speech_duration": 1.5999999999999943,
+      "text": "You girls ever meet those astronauts?"
+    },
+    {
+      "run_index": 15,
+      "speaker": "2",
+      "segment_indices": [
+        27
+      ],
+      "start": 81.78,
+      "end": 82.48,
+      "span_duration": 0.7000000000000028,
+      "speech_duration": 0.7000000000000028,
+      "text": "Mercury 7?"
+    },
+    {
+      "run_index": 16,
+      "speaker": "FACE_4",
+      "segment_indices": [
+        28
+      ],
+      "start": 83.78,
+      "end": 84.18,
+      "span_duration": 0.4000000000000057,
+      "speech_duration": 0.4000000000000057,
+      "text": "Absolutely."
+    },
+    {
+      "run_index": 17,
+      "speaker": "FACE_0",
+      "segment_indices": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "start": 85.21999999999998,
+      "end": 91.02,
+      "span_duration": 5.800000000000011,
+      "speech_duration": 5.219999999999999,
+      "text": "Uh, yes, sir. We work with those gentlemen all the time. Those boys are the best we got. I'm"
+    },
+    {
+      "run_index": 18,
+      "speaker": "4",
+      "segment_indices": [
+        33
+      ],
+      "start": 91.02,
+      "end": 91.36,
+      "span_duration": 0.3400000000000034,
+      "speech_duration": 0.3400000000000034,
+      "text": "sure of that."
+    },
+    {
+      "run_index": 19,
+      "speaker": "11",
+      "segment_indices": [
+        34
+      ],
+      "start": 91.64,
+      "end": 92.04,
+      "span_duration": 0.4000000000000057,
+      "speech_duration": 0.4000000000000057,
+      "text": "Yeah."
+    },
+    {
+      "run_index": 20,
+      "speaker": "4",
+      "segment_indices": [
+        35
+      ],
+      "start": 92.5,
+      "end": 94.56,
+      "span_duration": 2.0600000000000023,
+      "speech_duration": 2.0600000000000023,
+      "text": "We gotta get a man up here for what the commies do."
+    },
+    {
+      "run_index": 21,
+      "speaker": "10",
+      "segment_indices": [
+        36
+      ],
+      "start": 95.06,
+      "end": 95.56,
+      "span_duration": 0.5,
+      "speech_duration": 0.5,
+      "text": "Yes. Absolutely."
+    },
+    {
+      "run_index": 22,
+      "speaker": "4",
+      "segment_indices": [
+        37
+      ],
+      "start": 95.82,
+      "end": 97.2,
+      "span_duration": 1.3800000000000097,
+      "speech_duration": 1.3800000000000097,
+      "text": "Whole damn country's counting on them."
+    },
+    {
+      "run_index": 23,
+      "speaker": "FACE_1",
+      "segment_indices": [
+        38
+      ],
+      "start": 97.34,
+      "end": 98.26,
+      "span_duration": 0.9200000000000017,
+      "speech_duration": 0.9200000000000017,
+      "text": "That's for certain."
+    },
+    {
+      "run_index": 24,
+      "speaker": "10",
+      "segment_indices": [
+        39
+      ],
+      "start": 98.64,
+      "end": 101.42,
+      "span_duration": 2.780000000000001,
+      "speech_duration": 2.780000000000001,
+      "text": "Hard being of service is broken down on the side of the road, though."
+    },
+    {
+      "run_index": 25,
+      "speaker": "FACE_2",
+      "segment_indices": [
+        40,
+        41
+      ],
+      "start": 102.24000000000001,
+      "end": 105.6,
+      "span_duration": 3.359999999999985,
+      "speech_duration": 3.1399999999999864,
+      "text": "Right, right. Uh, what, y'all need a tow or something?"
+    },
+    {
+      "run_index": 26,
+      "speaker": "FACE_1",
+      "segment_indices": [
+        42,
+        43
+      ],
+      "start": 105.82,
+      "end": 108.46,
+      "span_duration": 2.6400000000000006,
+      "speech_duration": 2.4200000000000017,
+      "text": "No, thank you, officer. I think I gotta, just give me my..."
+    },
+    {
+      "run_index": 27,
+      "speaker": "7",
+      "segment_indices": [
+        44
+      ],
+      "start": 108.46,
+      "end": 112.0,
+      "span_duration": 3.5400000000000063,
+      "speech_duration": 3.5400000000000063,
+      "text": "Just need to bypass the starter."
+    },
+    {
+      "run_index": 28,
+      "speaker": "7",
+      "segment_indices": [
+        45
+      ],
+      "start": 114.46000000000001,
+      "end": 115.66,
+      "span_duration": 1.1999999999999886,
+      "speech_duration": 1.1999999999999886,
+      "text": "She's good at this stuff."
+    },
+    {
+      "run_index": 29,
+      "speaker": "7",
+      "segment_indices": [
+        46,
+        47
+      ],
+      "start": 117.64,
+      "end": 119.14,
+      "span_duration": 1.5,
+      "speech_duration": 1.2199999999999989,
+      "text": "Whoo! That a girl."
+    },
+    {
+      "run_index": 30,
+      "speaker": "FACE_5",
+      "segment_indices": [
+        48
+      ],
+      "start": 120.4,
+      "end": 121.26,
+      "span_duration": 0.8599999999999994,
+      "speech_duration": 0.8599999999999994,
+      "text": "We're all set."
+    },
+    {
+      "run_index": 31,
+      "speaker": "3",
+      "segment_indices": [
+        49,
+        50
+      ],
+      "start": 121.56,
+      "end": 125.82,
+      "span_duration": 4.259999999999991,
+      "speech_duration": 3.9399999999999977,
+      "text": "Well, hell, least I can do is give y'all an escort. I imagine you're... You're running late to work."
+    },
+    {
+      "run_index": 32,
+      "speaker": "12",
+      "segment_indices": [
+        51,
+        52,
+        53
+      ],
+      "start": 125.94,
+      "end": 132.98,
+      "span_duration": 7.039999999999992,
+      "speech_duration": 5.019999999999982,
+      "text": "Oh, no, sir. We wouldn't want to bother you. That would be wonderful, officer. Thank you so much, sir. Follow me. I'm..."
+    }
+  ],
+  "boundary_checks": [
+    {
+      "left_run_index": 0,
+      "right_run_index": 1,
+      "same_uninterrupted_utterance": false,
+      "skipped_reason": "gap_too_large"
+    },
+    {
+      "left_run_index": 1,
+      "right_run_index": 2,
+      "same_uninterrupted_utterance": true,
+      "response_id": "resp_08a97ed98e8d5e4c016a7f58ff1c1c87d0b50f3072ebbbca53",
+      "usage": {
+        "input_tokens": 369,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 141,
+        "output_tokens_details": {
+          "reasoning_tokens": 117
+        },
+        "total_tokens": 510
+      }
+    },
+    {
+      "left_run_index": 3,
+      "right_run_index": 4,
+      "same_uninterrupted_utterance": false,
+      "response_id": "resp_0d14ed13253b8963016a7f5900b35c819991b0b6fd451ad6b7",
+      "usage": {
+        "input_tokens": 324,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 54,
+        "output_tokens_details": {
+          "reasoning_tokens": 30
+        },
+        "total_tokens": 378
+      }
+    },
+    {
+      "left_run_index": 4,
+      "right_run_index": 5,
+      "same_uninterrupted_utterance": false,
+      "response_id": "resp_0204afcffabede70016a7f5901ef108198aebe3b64dfa67554",
+      "usage": {
+        "input_tokens": 324,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 88,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 412
+      }
+    },
+    {
+      "left_run_index": 5,
+      "right_run_index": 6,
+      "same_uninterrupted_utterance": false,
+      "skipped_reason": "gap_too_large"
+    },
+    {
+      "left_run_index": 6,
+      "right_run_index": 7,
+      "same_uninterrupted_utterance": true,
+      "response_id": "resp_0943a8f6cc5f0cce016a7f59034ea881998c7a961e4f4a88a1",
+      "usage": {
+        "input_tokens": 349,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 110,
+        "output_tokens_details": {
+          "reasoning_tokens": 86
+        },
+        "total_tokens": 459
+      }
+    },
+    {
+      "left_run_index": 7,
+      "right_run_index": 8,
+      "same_uninterrupted_utterance": true,
+      "response_id": "resp_0a4d80c6b930df87016a7f590556f487d09dfffb9253b0a75b",
+      "usage": {
+        "input_tokens": 341,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 116,
+        "output_tokens_details": {
+          "reasoning_tokens": 92
+        },
+        "total_tokens": 457
+      }
+    },
+    {
+      "left_run_index": 8,
+      "right_run_index": 9,
+      "same_uninterrupted_utterance": false,
+      "response_id": "resp_0606b5bb95edfc54016a7f5906f964819a8b6115196c664a29",
+      "usage": {
+        "input_tokens": 330,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 136,
+        "output_tokens_details": {
+          "reasoning_tokens": 112
+        },
+        "total_tokens": 466
+      }
+    },
+    {
+      "left_run_index": 9,
+      "right_run_index": 10,
+      "same_uninterrupted_utterance": false,
+      "response_id": "resp_08db7c40d1dedccb016a7f590883ac8199a65db0e2fa4eca7f",
+      "usage": {
+        "input_tokens": 321,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 115,
+        "output_tokens_details": {
+          "reasoning_tokens": 91
+        },
+        "total_tokens": 436
+      }
+    },
+    {
+      "left_run_index": 10,
+      "right_run_index": 11,
+      "same_uninterrupted_utterance": false,
+      "skipped_reason": "gap_too_large"
+    },
+    {
+      "left_run_index": 11,
+      "right_run_index": 12,
+      "same_uninterrupted_utterance": true,
+      "response_id": "resp_0c576c10d37340e0016a7f590a8f4481989e62f0d87c4b9c21",
+      "usage": {
+        "input_tokens": 330,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 214,
+        "output_tokens_details": {
+          "reasoning_tokens": 190
+        },
+        "total_tokens": 544
+      }
+    },
+    {
+      "left_run_index": 12,
+      "right_run_index": 13,
+      "same_uninterrupted_utterance": false,
+      "skipped_reason": "gap_too_large"
+    },
+    {
+      "left_run_index": 13,
+      "right_run_index": 14,
+      "same_uninterrupted_utterance": false,
+      "skipped_reason": "gap_too_large"
+    },
+    {
+      "left_run_index": 14,
+      "right_run_index": 15,
+      "same_uninterrupted_utterance": false,
+      "response_id": "resp_09967162f5049aca016a7f590ceac4819a92502dd80f736cbe",
+      "usage": {
+        "input_tokens": 336,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 103,
+        "output_tokens_details": {
+          "reasoning_tokens": 79
+        },
+        "total_tokens": 439
+      }
+    },
+    {
+      "left_run_index": 15,
+      "right_run_index": 16,
+      "same_uninterrupted_utterance": false,
+      "response_id": "resp_076c3c5f7c78aa60016a7f590e70bc81988ddd399561de9076",
+      "usage": {
+        "input_tokens": 315,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 56,
+        "output_tokens_details": {
+          "reasoning_tokens": 32
+        },
+        "total_tokens": 371
+      }
+    },
+    {
+      "left_run_index": 16,
+      "right_run_index": 17,
+      "same_uninterrupted_utterance": true,
+      "response_id": "resp_07ec7dead22f3462016a7f590f9e648199b71496e0d6c1667c",
+      "usage": {
+        "input_tokens": 333,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 219,
+        "output_tokens_details": {
+          "reasoning_tokens": 195
+        },
+        "total_tokens": 552
+      }
+    },
+    {
+      "left_run_index": 17,
+      "right_run_index": 18,
+      "same_uninterrupted_utterance": true,
+      "response_id": "resp_0c1085831041a4b3016a7f59121f08819987e2108a66864e43",
+      "usage": {
+        "input_tokens": 333,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 75,
+        "output_tokens_details": {
+          "reasoning_tokens": 51
+        },
+        "total_tokens": 408
+      }
+    },
+    {
+      "left_run_index": 18,
+      "right_run_index": 19,
+      "same_uninterrupted_utterance": false,
+      "response_id": "resp_070aeb71f82c80bf016a7f591368e881999fec38be5e69c36c",
+      "usage": {
+        "input_tokens": 333,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 115,
+        "output_tokens_details": {
+          "reasoning_tokens": 91
+        },
+        "total_tokens": 448
+      }
+    },
+    {
+      "left_run_index": 19,
+      "right_run_index": 20,
+      "same_uninterrupted_utterance": false,
+      "response_id": "resp_08b37c9911344f8c016a7f5914c930819980da8e69411c07cb",
+      "usage": {
+        "input_tokens": 322,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 102,
+        "output_tokens_details": {
+          "reasoning_tokens": 78
+        },
+        "total_tokens": 424
+      }
+    },
+    {
+      "left_run_index": 20,
+      "right_run_index": 21,
+      "same_uninterrupted_utterance": false,
+      "response_id": "resp_013fd86439c620b1016a7f59167098819b93c9dcf650b2f254",
+      "usage": {
+        "input_tokens": 322,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 61,
+        "output_tokens_details": {
+          "reasoning_tokens": 37
+        },
+        "total_tokens": 383
+      }
+    },
+    {
+      "left_run_index": 21,
+      "right_run_index": 22,
+      "same_uninterrupted_utterance": false,
+      "response_id": "resp_0e7f52e371ec7294016a7f5917eec4819a8d6ba6abcaae2f92",
+      "usage": {
+        "input_tokens": 327,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 324,
+        "output_tokens_details": {
+          "reasoning_tokens": 300
+        },
+        "total_tokens": 651
+      }
+    },
+    {
+      "left_run_index": 22,
+      "right_run_index": 23,
+      "same_uninterrupted_utterance": false,
+      "response_id": "resp_02f5de1a8ddd7051016a7f591b460c819b9059ee2fca92f9d2",
+      "usage": {
+        "input_tokens": 317,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 119,
+        "output_tokens_details": {
+          "reasoning_tokens": 95
+        },
+        "total_tokens": 436
+      }
+    },
+    {
+      "left_run_index": 23,
+      "right_run_index": 24,
+      "same_uninterrupted_utterance": false,
+      "response_id": "resp_06f3ccc1b51ec7db016a7f591cb104819abe404ab0998398a5",
+      "usage": {
+        "input_tokens": 329,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 145,
+        "output_tokens_details": {
+          "reasoning_tokens": 121
+        },
+        "total_tokens": 474
+      }
+    },
+    {
+      "left_run_index": 24,
+      "right_run_index": 25,
+      "same_uninterrupted_utterance": true,
+      "response_id": "resp_0bb20377c5309dbf016a7f591e7fb8819993831dd0d71db7f2",
+      "usage": {
+        "input_tokens": 338,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 158,
+        "output_tokens_details": {
+          "reasoning_tokens": 134
+        },
+        "total_tokens": 496
+      }
+    },
+    {
+      "left_run_index": 25,
+      "right_run_index": 26,
+      "same_uninterrupted_utterance": false,
+      "response_id": "resp_089e6332cad087d3016a7f5920a220819880ef36f25c6e5266",
+      "usage": {
+        "input_tokens": 342,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 122,
+        "output_tokens_details": {
+          "reasoning_tokens": 98
+        },
+        "total_tokens": 464
+      }
+    },
+    {
+      "left_run_index": 26,
+      "right_run_index": 27,
+      "same_uninterrupted_utterance": true,
+      "response_id": "resp_0a72dc6c53df9b52016a7f59228f3487d0bd85fd519c7ca43b",
+      "usage": {
+        "input_tokens": 342,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 173,
+        "output_tokens_details": {
+          "reasoning_tokens": 149
+        },
+        "total_tokens": 515
+      }
+    },
+    {
+      "left_run_index": 28,
+      "right_run_index": 29,
+      "same_uninterrupted_utterance": false,
+      "skipped_reason": "same_label"
+    },
+    {
+      "left_run_index": 29,
+      "right_run_index": 30,
+      "same_uninterrupted_utterance": false,
+      "response_id": "resp_0255afdfed70185a016a7f59245a8c87d09db61861a67833f2",
+      "usage": {
+        "input_tokens": 319,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 122,
+        "output_tokens_details": {
+          "reasoning_tokens": 98
+        },
+        "total_tokens": 441
+      }
+    },
+    {
+      "left_run_index": 30,
+      "right_run_index": 31,
+      "same_uninterrupted_utterance": false,
+      "response_id": "resp_075a7c614a1782c0016a7f59262ab481988c6694c625d5399c",
+      "usage": {
+        "input_tokens": 338,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 103,
+        "output_tokens_details": {
+          "reasoning_tokens": 79
+        },
+        "total_tokens": 441
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "run_index": 1,
+      "segment_indices": [
+        5
+      ],
+      "speaker": "1",
+      "speech_duration": 2.6400000000000006,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": true,
+      "resolution": "right_continuation",
+      "direct_visual_support": false
+    },
+    {
+      "run_index": 4,
+      "segment_indices": [
+        10
+      ],
+      "speaker": "FACE_0",
+      "speech_duration": 0.6199999999999974,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "preserve_direct_visual",
+      "direct_visual_support": true
+    },
+    {
+      "run_index": 5,
+      "segment_indices": [
+        11
+      ],
+      "speaker": "FACE_2",
+      "speech_duration": 2.780000000000001,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "preserve_direct_visual",
+      "direct_visual_support": true
+    },
+    {
+      "run_index": 6,
+      "segment_indices": [
+        12,
+        13
+      ],
+      "speaker": "8",
+      "speech_duration": 2.8200000000000074,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": true,
+      "resolution": "right_continuation",
+      "direct_visual_support": false
+    },
+    {
+      "run_index": 7,
+      "segment_indices": [
+        14,
+        15
+      ],
+      "speaker": "6",
+      "speech_duration": 2.5,
+      "left_same_uninterrupted_utterance": true,
+      "right_same_uninterrupted_utterance": true,
+      "resolution": "both_neighbors_conflict",
+      "direct_visual_support": false
+    },
+    {
+      "run_index": 8,
+      "segment_indices": [
+        16
+      ],
+      "speaker": "FACE_1",
+      "speech_duration": 1.519999999999996,
+      "left_same_uninterrupted_utterance": true,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "preserve_direct_visual",
+      "direct_visual_support": true
+    },
+    {
+      "run_index": 9,
+      "segment_indices": [
+        17,
+        18
+      ],
+      "speaker": "FACE_2",
+      "speech_duration": 1.3599999999999994,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "preserve_direct_visual",
+      "direct_visual_support": true
+    },
+    {
+      "run_index": 10,
+      "segment_indices": [
+        19
+      ],
+      "speaker": "5",
+      "speech_duration": 0.6599999999999966,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "no_continuation",
+      "direct_visual_support": false
+    },
+    {
+      "run_index": 11,
+      "segment_indices": [
+        20,
+        21
+      ],
+      "speaker": "0",
+      "speech_duration": 1.1799999999999997,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": true,
+      "resolution": "right_continuation",
+      "direct_visual_support": false
+    },
+    {
+      "run_index": 13,
+      "segment_indices": [
+        24,
+        25
+      ],
+      "speaker": "2",
+      "speech_duration": 2.460000000000008,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "no_continuation",
+      "direct_visual_support": false
+    },
+    {
+      "run_index": 14,
+      "segment_indices": [
+        26
+      ],
+      "speaker": "FACE_2",
+      "speech_duration": 1.5999999999999943,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "preserve_direct_visual",
+      "direct_visual_support": true
+    },
+    {
+      "run_index": 15,
+      "segment_indices": [
+        27
+      ],
+      "speaker": "2",
+      "speech_duration": 0.7000000000000028,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "no_continuation",
+      "direct_visual_support": false
+    },
+    {
+      "run_index": 16,
+      "segment_indices": [
+        28
+      ],
+      "speaker": "FACE_4",
+      "speech_duration": 0.4000000000000057,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": true,
+      "resolution": "preserve_direct_visual",
+      "direct_visual_support": true
+    },
+    {
+      "run_index": 18,
+      "segment_indices": [
+        33
+      ],
+      "speaker": "4",
+      "speech_duration": 0.3400000000000034,
+      "left_same_uninterrupted_utterance": true,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "move_left_tail_to_candidate",
+      "direct_visual_support": false
+    },
+    {
+      "run_index": 19,
+      "segment_indices": [
+        34
+      ],
+      "speaker": "11",
+      "speech_duration": 0.4000000000000057,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "no_continuation",
+      "direct_visual_support": false
+    },
+    {
+      "run_index": 20,
+      "segment_indices": [
+        35
+      ],
+      "speaker": "4",
+      "speech_duration": 2.0600000000000023,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "no_continuation",
+      "direct_visual_support": false
+    },
+    {
+      "run_index": 21,
+      "segment_indices": [
+        36
+      ],
+      "speaker": "10",
+      "speech_duration": 0.5,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "no_continuation",
+      "direct_visual_support": false
+    },
+    {
+      "run_index": 22,
+      "segment_indices": [
+        37
+      ],
+      "speaker": "4",
+      "speech_duration": 1.3800000000000097,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "no_continuation",
+      "direct_visual_support": false
+    },
+    {
+      "run_index": 23,
+      "segment_indices": [
+        38
+      ],
+      "speaker": "FACE_1",
+      "speech_duration": 0.9200000000000017,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "preserve_direct_visual",
+      "direct_visual_support": true
+    },
+    {
+      "run_index": 24,
+      "segment_indices": [
+        39
+      ],
+      "speaker": "10",
+      "speech_duration": 2.780000000000001,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": true,
+      "resolution": "right_continuation",
+      "direct_visual_support": false
+    },
+    {
+      "run_index": 26,
+      "segment_indices": [
+        42,
+        43
+      ],
+      "speaker": "FACE_1",
+      "speech_duration": 2.4200000000000017,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": true,
+      "resolution": "preserve_direct_visual",
+      "direct_visual_support": true
+    },
+    {
+      "run_index": 29,
+      "segment_indices": [
+        46,
+        47
+      ],
+      "speaker": "7",
+      "speech_duration": 1.2199999999999989,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "no_continuation",
+      "direct_visual_support": false
+    },
+    {
+      "run_index": 30,
+      "segment_indices": [
+        48
+      ],
+      "speaker": "FACE_5",
+      "speech_duration": 0.8599999999999994,
+      "left_same_uninterrupted_utterance": false,
+      "right_same_uninterrupted_utterance": false,
+      "resolution": "preserve_direct_visual",
+      "direct_visual_support": true
+    }
+  ],
+  "proposals": [
+    {
+      "action": "relabel_run",
+      "run_index": 1,
+      "segment_indices": [
+        5
+      ],
+      "from_speaker": "1",
+      "to_speaker": "9",
+      "anchor_run_indices": [
+        2
+      ],
+      "resolution": "right_continuation",
+      "verifier_approved": false,
+      "status": "verifier_rejected",
+      "verification": {
+        "response_id": "resp_03cea28454d6b551016a7f5927c3ac819bb93a8127ca851d55",
+        "usage": {
+          "input_tokens": 330,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 265,
+          "output_tokens_details": {
+            "reasoning_tokens": 245
+          },
+          "total_tokens": 595
+        }
+      }
+    },
+    {
+      "action": "relabel_run",
+      "run_index": 6,
+      "segment_indices": [
+        12,
+        13
+      ],
+      "from_speaker": "8",
+      "to_speaker": "6",
+      "anchor_run_indices": [
+        7
+      ],
+      "resolution": "right_continuation",
+      "verifier_approved": false,
+      "status": "verifier_rejected",
+      "verification": {
+        "response_id": "resp_097667608cd1a339016a7f592abbf48199a9d5f9ddc9dff280",
+        "usage": {
+          "input_tokens": 310,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 446,
+          "output_tokens_details": {
+            "reasoning_tokens": 426
+          },
+          "total_tokens": 756
+        }
+      }
+    },
+    {
+      "action": "relabel_run",
+      "run_index": 11,
+      "segment_indices": [
+        20,
+        21
+      ],
+      "from_speaker": "0",
+      "to_speaker": "FACE_1",
+      "anchor_run_indices": [
+        12
+      ],
+      "resolution": "right_continuation",
+      "verifier_approved": false,
+      "status": "verifier_rejected",
+      "verification": {
+        "response_id": "resp_098da1ddd78d62af016a7f592e6bac819a99a8cbd2a6d65b30",
+        "usage": {
+          "input_tokens": 291,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 143,
+          "output_tokens_details": {
+            "reasoning_tokens": 123
+          },
+          "total_tokens": 434
+        }
+      }
+    },
+    {
+      "action": "move_boundary_fragment",
+      "run_index": 17,
+      "candidate_run_index": 18,
+      "segment_positions": [
+        32
+      ],
+      "segment_indices": [
+        32
+      ],
+      "from_speaker": "FACE_0",
+      "to_speaker": "4",
+      "anchor_run_indices": [
+        18
+      ],
+      "resolution": "move_left_tail_to_candidate",
+      "fragment": {
+        "start": 90.62,
+        "end": 91.02,
+        "text": "I'm",
+        "words": [
+          "I'm"
+        ]
+      },
+      "verifier_approved": true,
+      "status": "applied",
+      "verification": {
+        "response_id": "resp_0c8e13a09453adb8016a7f5930775081998d83541ac6392f90",
+        "usage": {
+          "input_tokens": 271,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 177,
+          "output_tokens_details": {
+            "reasoning_tokens": 157
+          },
+          "total_tokens": 448
+        }
+      }
+    },
+    {
+      "action": "relabel_run",
+      "run_index": 24,
+      "segment_indices": [
+        39
+      ],
+      "from_speaker": "10",
+      "to_speaker": "FACE_2",
+      "anchor_run_indices": [
+        25
+      ],
+      "resolution": "right_continuation",
+      "verifier_approved": false,
+      "status": "verifier_rejected",
+      "verification": {
+        "response_id": "resp_050cb65099c5454e016a7f593266f4819bab3d06f6f19a55de",
+        "usage": {
+          "input_tokens": 299,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 127,
+          "output_tokens_details": {
+            "reasoning_tokens": 107
+          },
+          "total_tokens": 426
+        }
+      }
+    }
+  ],
+  "applied_corrections": [
+    {
+      "action": "move_boundary_fragment",
+      "run_index": 17,
+      "segment_indices": [
+        32
+      ],
+      "from_speaker": "FACE_0",
+      "to_speaker": "4",
+      "resolution": "move_left_tail_to_candidate"
+    }
+  ]
+}

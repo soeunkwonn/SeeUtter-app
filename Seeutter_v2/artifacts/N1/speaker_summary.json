@@ -1,0 +1,219 @@
+{
+  "video_id": "N1",
+  "source_segments": "D:\\seeutter\\Seeutter_v2\\artifacts\\N1\\aligned_segments_final.json",
+  "num_speakers": 18,
+  "total_speaking_sec": 64.66,
+  "unknown_speaking_sec": 8.040000000000001,
+  "top_k": 5,
+  "speakers": [
+    {
+      "speaker": "FACE_1",
+      "total_speaking_sec": 10.04,
+      "num_turns": 6,
+      "max_turn_sec": 3.1000000000000014,
+      "rank": 1,
+      "avg_turn_sec": 1.6733333333333331,
+      "share_of_speaking": 0.15527373956077944
+    },
+    {
+      "speaker": "FACE_2",
+      "total_speaking_sec": 9.499999999999986,
+      "num_turns": 7,
+      "max_turn_sec": 2.780000000000001,
+      "rank": 2,
+      "avg_turn_sec": 1.3571428571428552,
+      "share_of_speaking": 0.1469223631302194
+    },
+    {
+      "speaker": "7",
+      "total_speaking_sec": 5.959999999999994,
+      "num_turns": 4,
+      "max_turn_sec": 3.5400000000000063,
+      "rank": 3,
+      "avg_turn_sec": 1.4899999999999984,
+      "share_of_speaking": 0.09217445097432715
+    },
+    {
+      "speaker": "FACE_0",
+      "total_speaking_sec": 5.440000000000005,
+      "num_turns": 4,
+      "max_turn_sec": 2.3999999999999915,
+      "rank": 4,
+      "avg_turn_sec": 1.3600000000000012,
+      "share_of_speaking": 0.08413238478193637
+    },
+    {
+      "speaker": "12",
+      "total_speaking_sec": 5.019999999999982,
+      "num_turns": 3,
+      "max_turn_sec": 2.8000000000000114,
+      "rank": 5,
+      "avg_turn_sec": 1.6733333333333273,
+      "share_of_speaking": 0.07763686978038946
+    },
+    {
+      "speaker": "4",
+      "total_speaking_sec": 4.180000000000007,
+      "num_turns": 4,
+      "max_turn_sec": 2.0600000000000023,
+      "rank": 6,
+      "avg_turn_sec": 1.0450000000000017,
+      "share_of_speaking": 0.06464583977729674
+    },
+    {
+      "speaker": "3",
+      "total_speaking_sec": 3.9399999999999977,
+      "num_turns": 2,
+      "max_turn_sec": 2.1200000000000045,
+      "rank": 7,
+      "avg_turn_sec": 1.9699999999999989,
+      "share_of_speaking": 0.06093411691927
+    },
+    {
+      "speaker": "10",
+      "total_speaking_sec": 3.280000000000001,
+      "num_turns": 2,
+      "max_turn_sec": 2.780000000000001,
+      "rank": 8,
+      "avg_turn_sec": 1.6400000000000006,
+      "share_of_speaking": 0.050726879059696896
+    },
+    {
+      "speaker": "2",
+      "total_speaking_sec": 3.160000000000011,
+      "num_turns": 3,
+      "max_turn_sec": 2.0600000000000023,
+      "rank": 9,
+      "avg_turn_sec": 1.053333333333337,
+      "share_of_speaking": 0.048871017630683744
+    },
+    {
+      "speaker": "8",
+      "total_speaking_sec": 2.8200000000000074,
+      "num_turns": 2,
+      "max_turn_sec": 1.6000000000000014,
+      "rank": 10,
+      "avg_turn_sec": 1.4100000000000037,
+      "share_of_speaking": 0.04361274358181268
+    },
+    {
+      "speaker": "9",
+      "total_speaking_sec": 2.6799999999999926,
+      "num_turns": 3,
+      "max_turn_sec": 1.6599999999999966,
+      "rank": 11,
+      "avg_turn_sec": 0.8933333333333309,
+      "share_of_speaking": 0.04144757191463026
+    },
+    {
+      "speaker": "1",
+      "total_speaking_sec": 2.6400000000000006,
+      "num_turns": 1,
+      "max_turn_sec": 2.6400000000000006,
+      "rank": 12,
+      "avg_turn_sec": 2.6400000000000006,
+      "share_of_speaking": 0.04082895143829262
+    },
+    {
+      "speaker": "6",
+      "total_speaking_sec": 2.5,
+      "num_turns": 2,
+      "max_turn_sec": 1.5600000000000023,
+      "rank": 13,
+      "avg_turn_sec": 1.25,
+      "share_of_speaking": 0.03866377977111043
+    },
+    {
+      "speaker": "0",
+      "total_speaking_sec": 1.1799999999999997,
+      "num_turns": 2,
+      "max_turn_sec": 0.6999999999999957,
+      "rank": 14,
+      "avg_turn_sec": 0.5899999999999999,
+      "share_of_speaking": 0.018249304051964118
+    },
+    {
+      "speaker": "FACE_5",
+      "total_speaking_sec": 0.8599999999999994,
+      "num_turns": 1,
+      "max_turn_sec": 0.8599999999999994,
+      "rank": 15,
+      "avg_turn_sec": 0.8599999999999994,
+      "share_of_speaking": 0.013300340241261978
+    },
+    {
+      "speaker": "5",
+      "total_speaking_sec": 0.6599999999999966,
+      "num_turns": 1,
+      "max_turn_sec": 0.6599999999999966,
+      "rank": 16,
+      "avg_turn_sec": 0.6599999999999966,
+      "share_of_speaking": 0.0102072378595731
+    },
+    {
+      "speaker": "FACE_4",
+      "total_speaking_sec": 0.4000000000000057,
+      "num_turns": 1,
+      "max_turn_sec": 0.4000000000000057,
+      "rank": 17,
+      "avg_turn_sec": 0.4000000000000057,
+      "share_of_speaking": 0.006186204763377756
+    },
+    {
+      "speaker": "11",
+      "total_speaking_sec": 0.4000000000000057,
+      "num_turns": 1,
+      "max_turn_sec": 0.4000000000000057,
+      "rank": 18,
+      "avg_turn_sec": 0.4000000000000057,
+      "share_of_speaking": 0.006186204763377756
+    }
+  ],
+  "top_speakers": [
+    {
+      "speaker": "FACE_1",
+      "total_speaking_sec": 10.04,
+      "num_turns": 6,
+      "max_turn_sec": 3.1000000000000014,
+      "rank": 1,
+      "avg_turn_sec": 1.6733333333333331,
+      "share_of_speaking": 0.15527373956077944
+    },
+    {
+      "speaker": "FACE_2",
+      "total_speaking_sec": 9.499999999999986,
+      "num_turns": 7,
+      "max_turn_sec": 2.780000000000001,
+      "rank": 2,
+      "avg_turn_sec": 1.3571428571428552,
+      "share_of_speaking": 0.1469223631302194
+    },
+    {
+      "speaker": "7",
+      "total_speaking_sec": 5.959999999999994,
+      "num_turns": 4,
+      "max_turn_sec": 3.5400000000000063,
+      "rank": 3,
+      "avg_turn_sec": 1.4899999999999984,
+      "share_of_speaking": 0.09217445097432715
+    },
+    {
+      "speaker": "FACE_0",
+      "total_speaking_sec": 5.440000000000005,
+      "num_turns": 4,
+      "max_turn_sec": 2.3999999999999915,
+      "rank": 4,
+      "avg_turn_sec": 1.3600000000000012,
+      "share_of_speaking": 0.08413238478193637
+    },
+    {
+      "speaker": "12",
+      "total_speaking_sec": 5.019999999999982,
+      "num_turns": 3,
+      "max_turn_sec": 2.8000000000000114,
+      "rank": 5,
+      "avg_turn_sec": 1.6733333333333273,
+      "share_of_speaking": 0.07763686978038946
+    }
+  ]
+}

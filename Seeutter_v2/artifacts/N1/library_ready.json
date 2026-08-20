@@ -1,0 +1,10 @@
+{
+  "video_id": "N1",
+  "source_video": "C:\\Users\\HCAI2\\Videos\\N1.mp4",
+  "required_files": [
+    "meta.json",
+    "speaker_table.json",
+    "emotion_segments.json"
+  ],
+  "status": "ready"
+}
