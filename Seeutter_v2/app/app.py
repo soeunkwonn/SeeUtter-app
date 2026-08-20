@@ -40,7 +40,7 @@ if not participant:
 
 with st.sidebar:
     st.caption(f"번호: **{participant}**")
-    if st.button("다음 사람 시작하기"):
+    if st.button("다음 사람 시작하기 (연구자용)"):
         clear_participant()
         st.rerun()
 
