@@ -10,7 +10,9 @@ logging failure must not block the experiment.
 Configure via st.secrets (see .streamlit/secrets.toml.example):
 
     [google]
-    service_account = '''{ ...service account JSON... }'''
+    client_id = "OAuth client id"
+    client_secret = "OAuth client secret"
+    refresh_token = "refresh token from get_oauth_token.py"
     drive_folder_id = "the Drive folder id to upload videos into"
     sheet_id = "the Google Sheet id to append log rows to"
 """
@@ -24,23 +26,29 @@ from typing import Any
 import streamlit as st
 
 _SCOPES = [
-    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive",
     "https://www.googleapis.com/auth/spreadsheets",
 ]
+_TOKEN_URI = "https://oauth2.googleapis.com/token"
 
 
 def _config() -> dict[str, Any] | None:
-    """Read Google settings from secrets, or None when not configured."""
+    """Read Google OAuth settings from secrets, or None when not configured.
+
+    Uses OAuth *user* credentials (not a service account) so uploads are owned
+    by the researcher's own account -- service accounts have no Drive quota.
+    """
     try:
         google = st.secrets["google"]
-        sa = google["service_account"]
+        return {
+            "client_id": google["client_id"],
+            "client_secret": google["client_secret"],
+            "refresh_token": google["refresh_token"],
+            "drive_folder_id": google.get("drive_folder_id"),
+            "sheet_id": google.get("sheet_id"),
+        }
     except Exception:
         return None
-    return {
-        "service_account": sa if isinstance(sa, str) else _json.dumps(dict(sa)),
-        "drive_folder_id": google.get("drive_folder_id"),
-        "sheet_id": google.get("sheet_id"),
-    }
 
 
 def is_enabled() -> bool:
@@ -49,13 +57,18 @@ def is_enabled() -> bool:
 
 
 @st.cache_resource(show_spinner=False)
-def _services(service_account_json: str):
-    """Build cached Drive + Sheets clients from a service-account key."""
-    from google.oauth2.service_account import Credentials
+def _services(client_id: str, client_secret: str, refresh_token: str):
+    """Build cached Drive + Sheets clients from OAuth user credentials."""
+    from google.oauth2.credentials import Credentials
     from googleapiclient.discovery import build
 
-    creds = Credentials.from_service_account_info(
-        _json.loads(service_account_json), scopes=_SCOPES
+    creds = Credentials(
+        token=None,
+        refresh_token=refresh_token,
+        client_id=client_id,
+        client_secret=client_secret,
+        token_uri=_TOKEN_URI,
+        scopes=_SCOPES,
     )
     drive = build("drive", "v3", credentials=creds, cache_discovery=False)
     sheets = build("sheets", "v4", credentials=creds, cache_discovery=False)
@@ -91,7 +104,9 @@ def log_event(
     if not config or not config.get("sheet_id"):
         return False
     try:
-        _, sheets = _services(config["service_account"])
+        _, sheets = _services(
+            config["client_id"], config["client_secret"], config["refresh_token"]
+        )
         row = [
             _dt.datetime.now().isoformat(timespec="seconds"),
             pid or "",
@@ -138,7 +153,9 @@ def upload_file(
     try:
         from googleapiclient.http import MediaFileUpload
 
-        drive, _ = _services(config["service_account"])
+        drive, _ = _services(
+            config["client_id"], config["client_secret"], config["refresh_token"]
+        )
         timestamp = _dt.datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"{pid or 'anon'}_{artifact_id}_{label}_{timestamp}{path.suffix}"
         metadata = {"name": filename, "parents": [config["drive_folder_id"]]}
