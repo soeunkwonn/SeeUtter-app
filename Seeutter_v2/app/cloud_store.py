@@ -126,14 +126,11 @@ def log_event(
             ).execute(num_retries=5)
         )
         return True
-    except Exception as exc:
-        # Never let a logging hiccup interrupt the participant.
+    except Exception:
+        # Never let a logging hiccup interrupt the participant; keep the detail
+        # in the server logs for the researcher, show nothing alarming on screen.
         import traceback
         traceback.print_exc()
-        try:
-            st.warning(f"[진단] 시트 기록 실패: {type(exc).__name__}: {exc}")
-        except Exception:
-            pass
         return False
 
 
@@ -174,11 +171,8 @@ def upload_file(
 
         created = _with_retries(_upload)
         return created.get("webViewLink")
-    except Exception as exc:
+    except Exception:
+        # Detail goes to the server logs; the video still exists on disk this run.
         import traceback
         traceback.print_exc()
-        try:
-            st.warning(f"[진단] 드라이브 업로드 실패: {type(exc).__name__}: {exc}")
-        except Exception:
-            pass
         return None
