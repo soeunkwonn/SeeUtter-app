@@ -30,14 +30,12 @@ from Seeutter_v2.pipeline.common import (  # noqa: E402
     write_json,
 )
 from Seeutter_v2.pipeline.stages.s07_speaker_summary import run as run_speaker_summary  # noqa: E402
-from Seeutter_v2.pipeline.stages.s08_speaker_names import run as run_speaker_names  # noqa: E402
 from Seeutter_v2.pipeline.stages.s10_render import (  # noqa: E402
     DEFAULT_POSITION,
     POSITION_ALIGNMENT,
     caption_units,
     run as run_render,
 )
-from Seeutter_v2.pipeline.stages.s11_translate import run as run_translate  # noqa: E402
 from subtitle_position import POSITION_PRESETS, build_position_previews  # noqa: E402
 
 
@@ -63,7 +61,6 @@ _SEED_IGNORE = shutil.ignore_patterns(
     "subtitles.ass",
     "speaker_map.json",
     "caption_style.json",
-    "final_caption_data.json",
     "translation.json",
 )
 
@@ -418,9 +415,20 @@ def save_speaker_map(artifact_dir: Path, names: dict[str, str]) -> Path:
 
 
 def prepare_caption_data(artifact_dir: Path) -> None:
-    """Apply user names and translate; emotion is already prepared for Library."""
-    run_speaker_names(artifact_dir=artifact_dir, overwrite=True)
-    run_translate(artifact_dir=artifact_dir)
+    """Apply the participant's names onto the pre-tuned captions, nothing else.
+
+    The shipped ``final_caption_data.json`` already carries the researcher's final
+    emotions and Korean translations, so naming must only relabel each speaker:
+    we rewrite ``speaker_display`` in place and never re-run naming or translation.
+    """
+    paths = standard_paths(artifact_dir)
+    names = load_speaker_map(artifact_dir)
+    data = read_json(paths["final_caption_data"])
+    for segment in data.get("segments", []):
+        speaker_id = str(segment.get("speaker_id") or segment.get("speaker") or "")
+        if speaker_id in names:
+            segment["speaker_display"] = names[speaker_id]
+    write_json(paths["final_caption_data"], data)
 
 
 def render_caption_video(artifact_dir: Path) -> Path:
