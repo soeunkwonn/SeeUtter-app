@@ -25,7 +25,6 @@ if str(WORKSPACE_DIR) not in sys.path:
 
 from Seeutter_v2.pipeline.common import (  # noqa: E402
     DEFAULT_ARTIFACT_ROOT,
-    preferred_aligned_segments_path,
     read_json,
     standard_paths,
     write_json,
@@ -357,8 +356,20 @@ def load_speaker_map(artifact_dir: Path) -> dict[str, str]:
     return {str(key): str(value) for key, value in speakers.items()} if isinstance(speakers, dict) else {}
 
 
+def _speaker_sort_key(speaker_id: str) -> tuple[int, int]:
+    """Order speakers naturally: FACE_0, FACE_1, ... then any AUDIO_ ids."""
+    prefix_rank = 0 if speaker_id.startswith("FACE_") else 1
+    digits = "".join(ch for ch in speaker_id if ch.isdigit())
+    return (prefix_rank, int(digits) if digits else 0)
+
+
 def speaker_rows(artifact_dir: Path) -> list[dict[str, Any]]:
-    """Refresh the small summary artifact and return speakers shown in the UI."""
+    """Return the speakers shown in the naming UI.
+
+    The nameable set is taken from ``emotion_segments.json``: its diarization may
+    have been hand-corrected, so it -- not the raw aligned segments -- decides
+    which faces a participant names.
+    """
     paths = standard_paths(artifact_dir)
     run_speaker_summary(
         artifact_dir=artifact_dir,
@@ -366,21 +377,26 @@ def speaker_rows(artifact_dir: Path) -> list[dict[str, Any]]:
         overwrite=True,
         write_map_template=False,
     )
-    table = read_json(paths["speaker_table_json"])
-    aligned = read_json(preferred_aligned_segments_path(paths))
+    emotion = read_json(paths["emotion_segments"])
     nameable_speaker_ids = {
         str(segment.get("speaker", "UNKNOWN"))
-        for segment in aligned.get("segments", [])
+        for segment in emotion.get("segments", [])
         # Raw diarization labels ("0", "1", ...) stay internal.  AUDIO_n
         # labels are created only after WeSpeaker could not link a clean
         # audio-only cluster to any face-backed identity.
         if str(segment.get("speaker", "UNKNOWN")).startswith(("FACE_", "AUDIO_"))
     }
-    return [
+    table = read_json(paths["speaker_table_json"])
+    rows = [
         row
         for row in table.get("rows", [])
         if str(row.get("speaker_id")) in nameable_speaker_ids
     ]
+    # Include any corrected speaker the aligned-based table no longer lists.
+    present = {str(row.get("speaker_id")) for row in rows}
+    rows.extend({"speaker_id": sid} for sid in nameable_speaker_ids - present)
+    rows.sort(key=lambda row: _speaker_sort_key(str(row.get("speaker_id"))))
+    return rows
 
 
 def save_speaker_map(artifact_dir: Path, names: dict[str, str]) -> Path:
@@ -454,7 +470,8 @@ def build_speaker_preview_images(artifact_dir: Path, speaker_ids: list[str]) -> 
     """
     paths = standard_paths(artifact_dir)
     video_path = resolve_source_video(read_json(paths["meta"]))
-    segments = read_json(preferred_aligned_segments_path(paths)).get("segments") or []
+    # Match the naming list: pick preview frames from the (corrected) emotion segments.
+    segments = read_json(paths["emotion_segments"]).get("segments") or []
     best: dict[str, dict[str, Any]] = {}
     for segment in segments:
         speaker_id = str(segment.get("speaker"))

@@ -1,6 +1,6 @@
 {
   "video_id": "N1",
-  "source_segments": "D:\\seeutter\\Seeutter_v2\\artifacts\\N1\\aligned_segments_final.json",
+  "source_segments": "D:\\seeutter\\seeutter-cloud\\Seeutter_v2\\artifacts\\N1\\aligned_segments_final.json",
   "num_speakers": 18,
   "total_speaking_sec": 64.66,
   "unknown_speaking_sec": 8.040000000000001,

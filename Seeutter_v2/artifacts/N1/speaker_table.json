@@ -1,6 +1,6 @@
 {
   "video_id": "N1",
-  "source_segments": "D:\\seeutter\\Seeutter_v2\\artifacts\\N1\\aligned_segments_final.json",
+  "source_segments": "D:\\seeutter\\seeutter-cloud\\Seeutter_v2\\artifacts\\N1\\aligned_segments_final.json",
   "top_k": 5,
   "num_rows": 18,
   "rows": [
