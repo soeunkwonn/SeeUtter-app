@@ -46,7 +46,7 @@ with st.sidebar:
 
 # Korean-labelled navigation (replaces the English filename-based sidebar).
 pages = [
-    st.Page("home.py", title="처음", icon="🏠", default=True),
+    st.Page("pages/00_home.py", title="처음", icon="🏠", default=True),
     st.Page("pages/01_speaker_names.py", title="이름 정하기", icon="✏️"),
     st.Page("pages/02_caption_position.py", title="자막 위치", icon="📍"),
     st.Page("pages/04_render.py", title="완성 영상", icon="🎬"),

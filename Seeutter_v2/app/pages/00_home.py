@@ -1,10 +1,15 @@
-"""Home page: pick a video to start naming. Rendered inside st.navigation."""
+"""Home page: pick a video to start naming. Rendered inside st.navigation.
+
+Lives under pages/ so that st.switch_page("pages/00_home.py") is a valid target
+(st.navigation only allows switching to the main file or files in pages/).
+"""
 from __future__ import annotations
 
 import sys
 from pathlib import Path
 
-APP_DIR = Path(__file__).resolve().parent
+PAGE_DIR = Path(__file__).resolve().parent
+APP_DIR = PAGE_DIR.parent
 if str(APP_DIR) not in sys.path:
     sys.path.insert(0, str(APP_DIR))
 
