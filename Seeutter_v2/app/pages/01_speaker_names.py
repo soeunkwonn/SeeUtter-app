@@ -26,13 +26,13 @@ from workflow import (
 )
 
 
-st.set_page_config(page_title="SeeUtter · 화자명", page_icon="👤", layout="wide")
+st.set_page_config(page_title="SeeUtter · 이름", page_icon="👤", layout="wide")
 init_session()
 artifact_dir = require_current_artifact()
 st.session_state.wizard_step = "names"
 
-st.title("1. 화자 이름 붙이기")
-st.caption("대표 얼굴 또는 대표 발화 장면을 보고 화자 이름을 입력하세요.")
+st.title("1. 말하는 사람 이름 정하기")
+st.caption("사진을 보고, 말하는 사람의 이름을 적어 주세요.")
 st.markdown(
     """
     <style>
@@ -63,13 +63,13 @@ except (FileNotFoundError, ValueError) as exc:
     st.stop()
 
 if not rows:
-    st.warning("이 영상에서 이름을 붙일 화자를 찾지 못했습니다.")
-    if st.button("Library로 돌아가기"):
+    st.warning("이름을 정할 사람을 찾지 못했어요.")
+    if st.button("처음으로"):
         st.switch_page("app.py")
     st.stop()
 
 speaker_ids = [str(row["speaker_id"]) for row in rows]
-with st.spinner("화자 미리보기를 준비하고 있습니다..."):
+with st.spinner("사진을 준비하고 있어요..."):
     preview_images = build_speaker_preview_images(artifact_dir, speaker_ids)
     face_paths = speaker_face_paths(artifact_dir, speaker_ids)
     hint_paths = speaker_face_hints(artifact_dir, speaker_ids)
@@ -82,18 +82,16 @@ with st.form("speaker_names"):
             with column:
                 speaker_id = str(row["speaker_id"])
                 if speaker_id.startswith("AUDIO_"):
-                    st.caption("시각 미확정 화자 · 음성 기반")
-                else:
-                    st.caption(f"화자 ID · {speaker_id}")
+                    st.caption("목소리로 구분한 사람")
                 face_path = face_paths.get(speaker_id)
                 hint_path = hint_paths.get(speaker_id)
                 preview_image = preview_images.get(speaker_id)
                 if face_path:
-                    st.caption("대표 얼굴")
+                    st.caption("얼굴 사진")
                 elif hint_path:
-                    st.caption("추정 얼굴 (미확정) · 확인 후 이름 지정")
+                    st.caption("얼굴 추정 (확인 후 이름 적기)")
                 else:
-                    st.caption("얼굴 미확정 · 대표 발화 장면")
+                    st.caption("장면 사진")
                 if face_path:
                     st.image(str(face_path), use_container_width=True)
                 elif hint_path:
@@ -101,7 +99,7 @@ with st.form("speaker_names"):
                 elif preview_image:
                     st.image(str(preview_image), use_container_width=True)
                 else:
-                    st.info("대표 이미지를 만들지 못했습니다.")
+                    st.info("사진을 만들지 못했어요.")
                 names[speaker_id] = st.text_input(
                     "이름",
                     value=saved_names.get(speaker_id, speaker_id),
@@ -110,10 +108,10 @@ with st.form("speaker_names"):
 
     back_col, _spacer, next_col = st.columns((1, 7.5, 1.3))
     with back_col:
-        back = st.form_submit_button("Library")
+        back = st.form_submit_button("처음으로")
     with next_col:
         next_step = st.form_submit_button(
-            "저장하고 자막 위치 정하기",
+            "저장하고 다음으로",
             type="primary",
             use_container_width=True,
         )
@@ -122,7 +120,7 @@ if back:
     st.switch_page("app.py")
 if next_step:
     save_speaker_map(artifact_dir, names)
-    with st.spinner("화자명을 적용하고 자막을 한국어로 번역하고 있습니다..."):
+    with st.spinner("이름을 적용하고 자막을 만들고 있어요..."):
         try:
             prepare_caption_data(artifact_dir)
         except (FileNotFoundError, ValueError, RuntimeError) as exc:

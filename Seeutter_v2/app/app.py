@@ -21,41 +21,38 @@ from workflow import (
 )
 
 
-st.set_page_config(page_title="SeeUtter Library", page_icon="🎬", layout="wide")
+st.set_page_config(page_title="SeeUtter", page_icon="🎬", layout="wide")
 init_session()
 
-st.title("SeeUtter Library")
+st.title("SeeUtter")
 
 # Participant gate: everyone opens the same URL, then identifies themselves.
 # The id keeps each person's speaker names / captions / renders isolated.
 participant = current_participant()
 if not participant:
-    st.subheader("참가자 번호를 입력해주세요")
-    st.caption("실험 안내에서 받은 번호를 그대로 입력하세요. 예: P07")
+    st.subheader("번호를 입력해 주세요")
+    st.caption("받으신 번호를 입력해 주세요. (예: P07)")
     with st.form("participant_gate"):
-        entered = st.text_input("참가자 번호", placeholder="P07", max_chars=64)
+        entered = st.text_input("번호", placeholder="P07", max_chars=64)
         submitted = st.form_submit_button("시작하기", type="primary")
     if submitted:
         if set_participant(entered):
             st.rerun()
         else:
-            st.error("영문·숫자로 된 번호를 입력해주세요. 예: P07")
+            st.error("번호를 다시 확인해 주세요. (예: P07)")
     st.stop()
 
 with st.sidebar:
-    st.caption(f"참가자: **{participant}**")
-    if st.button("다른 참가자로 전환"):
+    st.caption(f"번호: **{participant}**")
+    if st.button("다음 사람 시작하기"):
         clear_participant()
         st.rerun()
 
-st.caption("감정 분석까지 끝난 영상을 고르고, 화자명과 자막 스타일을 완성하세요.")
+st.caption("영상을 고르고, 화자명을 완성하세요.")
 
 items = library_items()
 if not items:
-    st.info(
-        "아직 준비된 영상이 없습니다. `python -m Seeutter_v2.pipeline.prepare_library`로 "
-        "화자 분석과 SenseVoice 감정 분석을 먼저 실행해주세요."
-    )
+    st.info("지금은 영상을 불러올 수 없어요. 연구자에게 알려 주세요.")
     st.stop()
 
 labels = {
@@ -66,27 +63,21 @@ current_id = st.session_state.get("library_artifact_id")
 ids = [item["id"] for item in items]
 initial_index = ids.index(current_id) if current_id in ids else 0
 selected_id = st.selectbox(
-    "영상 고르기",
+    "영상을 골라 주세요",
     ids,
     index=initial_index,
     format_func=lambda item_id: labels[item_id],
 )
 selected = next(item for item in items if item["id"] == selected_id)
 
-left, right = st.columns((2, 1))
-with left:
-    st.video(str(selected["source_video"]))
-with right:
-    duration = selected["duration_sec"]
-    if duration:
-        st.metric("영상 길이", f"{duration:.1f}초")
+st.video(str(selected["source_video"]))
 
 next_col, reset_col = st.columns((1, 5))
 with next_col:
-    if st.button("이 영상으로 시작", type="primary"):
+    if st.button("이 영상으로 시작하기", type="primary"):
         select_library_item(selected_id)
         st.switch_page("pages/01_speaker_names.py")
 with reset_col:
-    if st.session_state.get("library_artifact_id") and st.button("선택 해제"):
+    if st.session_state.get("library_artifact_id") and st.button("다시 고르기"):
         clear_selection()
         st.rerun()
