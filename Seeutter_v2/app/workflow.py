@@ -75,7 +75,7 @@ RENDER_LOCK = threading.Lock()
 TOP_K_SPEAKERS = 5
 STYLE_FILE_NAME = "caption_style.json"
 READY_FILE_NAME = "library_ready.json"
-PREVIEW_RENDER_VERSION = "6"  # bump when caption_pil rendering changes
+PREVIEW_RENDER_VERSION = "7"  # bump when caption_pil rendering changes
 
 
 def _sanitize_pid(raw: Any) -> str | None:

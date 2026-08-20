@@ -72,6 +72,44 @@ def _emoji_font(size):
             return _caption_font(size)
 
 
+# Pre-rendered colour emoji (baked from Segoe on Windows). Pasting these images
+# gives identical emoji on any OS -- PIL cannot draw Linux's Noto Color Emoji
+# reliably, so the emotion emoji never renders as a broken/monochrome glyph.
+_EMOJI_DIR = Path(__file__).resolve().parents[2] / "assets" / "emoji"
+_EMOJI_PNG = {
+    "😄": "happy.png",
+    "😠": "angry.png",
+    "😭": "sad.png",
+    "🤢": "disgusted.png",
+    "😨": "fearful.png",
+    "😲": "surprised.png",
+}
+_EMOJI_CACHE: dict[str, Image.Image] = {}
+
+
+def _emoji_asset(char):
+    """Cached RGBA image for a known emoji, or None to fall back to the font."""
+    name = _EMOJI_PNG.get(char)
+    if not name:
+        return None
+    if char not in _EMOJI_CACHE:
+        path = _EMOJI_DIR / name
+        if not path.is_file():
+            return None
+        _EMOJI_CACHE[char] = Image.open(path).convert("RGBA")
+    return _EMOJI_CACHE.get(char)
+
+
+def _emoji_layout(char, fontsize):
+    """(scaled image, width) for an emoji drawn as an image, or None for font."""
+    base = _emoji_asset(char)
+    if base is None:
+        return None
+    height = max(1, round(fontsize * 1.10))
+    width = max(1, round(base.width * height / base.height))
+    return base.resize((width, height), Image.LANCZOS), width
+
+
 def _hex_rgb(hex_color):
     h = str(hex_color).lstrip("#")
     if len(h) != 6:
@@ -176,11 +214,14 @@ def draw_caption(
     for para in paragraphs:
         if not para:
             continue
-        measured = [
-            (s, is_emoji, _MEASURE.textlength(s, font=(efont if is_emoji else tfont)),
-             (efont if is_emoji else tfont))
-            for s, is_emoji in para
-        ]
+        measured = []
+        for s, is_emoji in para:
+            if is_emoji:
+                layout = _emoji_layout(s, fontsize)
+                width = layout[1] if layout else _MEASURE.textlength(s, font=efont)
+                measured.append((s, is_emoji, width, efont))
+            else:
+                measured.append((s, is_emoji, _MEASURE.textlength(s, font=tfont), tfont))
         lines.extend(_wrap_lines(measured, space_w, max_inner))
     if not lines:
         return Image.new("RGBA", (1, 1), (0, 0, 0, 0))
@@ -208,7 +249,14 @@ def draw_caption(
         baseline_y = y + ascent
         for s, is_emoji, w, f in line:
             if is_emoji:
-                d.text((x, baseline_y), s, font=f, embedded_color=True, anchor="ls")
+                layout = _emoji_layout(s, fontsize)
+                if layout is not None:
+                    emoji_img, _w = layout
+                    # Centre the emoji vertically on the text's visual middle.
+                    top = int(round(baseline_y - fontsize * 0.35 - emoji_img.height / 2))
+                    img.alpha_composite(emoji_img, (int(round(x)), top))
+                else:
+                    d.text((x, baseline_y), s, font=f, embedded_color=True, anchor="ls")
             else:
                 d.text((x, baseline_y), s, font=f, fill=fill, anchor="ls")
             x += w + space_w
