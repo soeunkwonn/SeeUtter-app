@@ -93,10 +93,12 @@ def log_event(
             body={"values": [row]},
         ).execute()
         return True
-    except Exception:
+    except Exception as exc:
         # Never let a logging hiccup interrupt the participant.
+        import traceback
+        traceback.print_exc()
         try:
-            st.warning("결과 기록 중 문제가 있었지만 실험은 계속 진행됩니다.")
+            st.warning(f"[진단] 시트 기록 실패: {type(exc).__name__}: {exc}")
         except Exception:
             pass
         return False
@@ -129,9 +131,11 @@ def upload_file(
             .execute()
         )
         return created.get("webViewLink")
-    except Exception:
+    except Exception as exc:
+        import traceback
+        traceback.print_exc()
         try:
-            st.warning("영상 업로드 중 문제가 있었지만 파일은 서버에 저장돼 있습니다.")
+            st.warning(f"[진단] 드라이브 업로드 실패: {type(exc).__name__}: {exc}")
         except Exception:
             pass
         return None
