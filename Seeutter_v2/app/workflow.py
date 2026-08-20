@@ -301,7 +301,9 @@ def require_current_artifact() -> Path:
     artifact_dir = current_artifact()
     if artifact_dir is None:
         st.warning("먼저 영상을 선택해주세요.")
-        st.switch_page("home.py")
+        # switch_page only accepts the main file or pages/*, so route to the
+        # entrypoint, which renders the default (home) page.
+        st.switch_page("app.py")
         st.stop()
     return artifact_dir
 

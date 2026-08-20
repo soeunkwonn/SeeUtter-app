@@ -69,4 +69,4 @@ with back_col:
 with library_col:
     if st.button("처음으로", use_container_width=True):
         clear_selection()
-        st.switch_page("home.py")
+        st.switch_page("app.py")
