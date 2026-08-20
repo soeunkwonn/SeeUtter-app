@@ -12,7 +12,7 @@ import shutil
 import subprocess
 import sys
 import threading
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 from typing import Any
 
 import streamlit as st
@@ -131,10 +131,14 @@ def resolve_source_video(meta: dict[str, Any]) -> Path:
     pipeline. On a cloud deploy that machine-specific path no longer exists, so
     we fall back to a same-named file under the repo's ``videos/`` folder.
     """
-    raw = Path(str(meta.get("source_video") or ""))
+    raw_str = str(meta.get("source_video") or "")
+    raw = Path(raw_str)
     if raw.exists():
         return raw
-    return PROJECT_DIR / "videos" / raw.name
+    # The recorded path may be a Windows path being read on Linux (cloud), where
+    # a backslash is not a separator; take the basename in a way that handles both.
+    name = PureWindowsPath(raw_str).name
+    return PROJECT_DIR / "videos" / name
 
 
 def _default_ffmpeg_bin() -> str:
