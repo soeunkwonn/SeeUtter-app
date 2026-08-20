@@ -435,8 +435,13 @@ def prepare_caption_data(artifact_dir: Path) -> None:
 
 def render_caption_video(artifact_dir: Path) -> Path:
     style = load_caption_style(artifact_dir)
+    # Pass the resolved video explicitly: on the cloud the path recorded in
+    # meta.json (a Windows path) does not exist, so the render stage would
+    # otherwise fail to find the source video.
+    meta = read_json(standard_paths(artifact_dir)["meta"])
     result = run_render(
         artifact_dir=artifact_dir,
+        video=resolve_source_video(meta),
         position=style["position"],
         # Caption text is intentionally fixed white. Emotion is still shown
         # through its emoji, not through a per-emotion text colour.
