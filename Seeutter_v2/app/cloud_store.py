@@ -62,6 +62,22 @@ def _services(service_account_json: str):
     return drive, sheets
 
 
+def _with_retries(fn, attempts: int = 4, base_delay: float = 1.0):
+    """Run ``fn`` with exponential backoff -- rides out transient network drops
+    (BrokenPipeError, SSL EOF) that Community Cloud occasionally throws."""
+    import time
+
+    last_error = None
+    for attempt in range(attempts):
+        try:
+            return fn()
+        except Exception as exc:  # noqa: BLE001 -- retry any transport hiccup
+            last_error = exc
+            if attempt < attempts - 1:
+                time.sleep(base_delay * (2 ** attempt))
+    raise last_error
+
+
 def log_event(
     pid: str | None,
     artifact_id: str,
@@ -85,13 +101,15 @@ def log_event(
             position or "",
             video_link or "",
         ]
-        sheets.spreadsheets().values().append(
-            spreadsheetId=config["sheet_id"],
-            range="A1",
-            valueInputOption="USER_ENTERED",
-            insertDataOption="INSERT_ROWS",
-            body={"values": [row]},
-        ).execute()
+        _with_retries(
+            lambda: sheets.spreadsheets().values().append(
+                spreadsheetId=config["sheet_id"],
+                range="A1",
+                valueInputOption="USER_ENTERED",
+                insertDataOption="INSERT_ROWS",
+                body={"values": [row]},
+            ).execute(num_retries=5)
+        )
         return True
     except Exception as exc:
         # Never let a logging hiccup interrupt the participant.
@@ -124,12 +142,20 @@ def upload_file(
         timestamp = _dt.datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"{pid or 'anon'}_{artifact_id}_{label}_{timestamp}{path.suffix}"
         metadata = {"name": filename, "parents": [config["drive_folder_id"]]}
-        media = MediaFileUpload(str(path), resumable=False)
-        created = (
-            drive.files()
-            .create(body=metadata, media_body=media, fields="id, webViewLink")
-            .execute()
-        )
+
+        def _upload():
+            # Resumable, chunked upload survives a dropped connection mid-transfer
+            # far better than sending the whole ~32MB video in one request.
+            media = MediaFileUpload(str(path), resumable=True, chunksize=5 * 1024 * 1024)
+            request = drive.files().create(
+                body=metadata, media_body=media, fields="id, webViewLink"
+            )
+            response = None
+            while response is None:
+                _status, response = request.next_chunk(num_retries=5)
+            return response
+
+        created = _with_retries(_upload)
         return created.get("webViewLink")
     except Exception as exc:
         import traceback
